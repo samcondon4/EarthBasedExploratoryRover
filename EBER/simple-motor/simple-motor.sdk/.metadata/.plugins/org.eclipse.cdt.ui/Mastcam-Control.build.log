@@ -1,0 +1,16 @@
+18:48:00 **** Auto Build of configuration Debug for project Mastcam-Control ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamSupport.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamSupport.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Mastcam-Control_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamSupport.d" -MT"src/MastcamSupport.o" -o "src/MastcamSupport.o" "../src/MastcamSupport.c"
+In file included from ../src/MastcamSupport.c:8:0:
+../src/MastcamSupport.h:7:23: fatal error: xuartlite.h: No such file or directory
+ #include "xuartlite.h"
+                       ^
+compilation terminated.
+make: *** [src/MastcamSupport.o] Error 1
+
+18:48:01 Build Finished (took 568ms)
+

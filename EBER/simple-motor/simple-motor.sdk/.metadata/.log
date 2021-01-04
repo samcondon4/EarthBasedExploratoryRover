@@ -1,0 +1,2916 @@
+!SESSION 2021-01-04 13:21:48.399 -----------------------------------------------
+eclipse.buildId=2017.4
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/thoma/EBER/simple-motor/simple-motor.sdk
+
+This is a continuation of log file C:\Users\thoma\EBER\simple-motor\simple-motor.sdk\.metadata\.bak_0.log
+Created Time: 2021-01-04 14:55:19.778
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:19.783
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:19.792
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:19.897
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:19.909
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.027
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.038
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.157
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.168
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.293
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.306
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.426
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.436
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.579
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.589
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.709
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.720
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.842
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.851
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.971
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:20.981
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:21.102
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:21.113
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:21.234
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:21.248
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:21.371
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:21.384
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:21.837
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:21.848
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:21.973
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:21.983
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.111
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.120
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.241
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.251
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.383
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.392
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.514
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.528
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.609
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.752
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.808
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.818
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.898
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.941
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:22.951
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:23.036
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:23.106
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:23.120
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:23.202
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:24.192
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:24.203
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:24.286
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:25.271
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:25.283
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:25.371
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:26.771
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:26.782
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:26.865
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:28.043
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:28.055
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:28.142
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:29.281
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:29.292
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:29.371
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:30.391
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:30.404
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:30.488
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:31.105
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:31.114
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:31.195
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:31.810
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:31.819
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:31.899
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:32.998
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:33.007
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:33.143
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:37.736
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:37.745
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:37.821
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:38.937
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:38.946
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:39.028
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:40.044
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:40.053
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:40.133
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:41.387
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:41.398
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:41.485
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:42.783
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:42.796
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:42.882
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:44.048
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-01-04 14:55:44.061
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:04.611
+!MESSAGE XSCT Command: [disconnect tcfchan#13], Thread: Thread-1757
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:04.625
+!MESSAGE XSCT command with result: [disconnect tcfchan#13], Result: [null, ]. Thread: Thread-1757
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-01-04 14:56:05.612
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.619
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.633
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#14]. Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.640
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.661
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.667
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.681
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.688
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.718
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.725
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.772
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Result: [null, ]. Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.779
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-28
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:05.817
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is not configured]. Thread: Worker-28
+
+!ENTRY org.eclipse.tcf.debug.ui 4 0 2021-01-04 14:56:08.895
+!MESSAGE Unhandled exception in TCF UI
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.tcf.internal.cdt.ui.TCFBreakpointActions$RunControlListener.<init>(TCFBreakpointActions.java:218)
+	at org.eclipse.tcf.internal.cdt.ui.TCFBreakpointActions$1.onConnected(TCFBreakpointActions.java:281)
+	at org.eclipse.tcf.internal.debug.ui.model.TCFModelManager$1.onConnected(TCFModelManager.java:64)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$15.start(TCFLaunch.java:447)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$LaunchStep.done(TCFLaunch.java:113)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch$LaunchStep.run(TCFLaunch.java:121)
+	at org.eclipse.tcf.internal.debug.model.TCFLaunch.runLaunchSequence(TCFLaunch.java:491)
+	at com.xilinx.sdk.tcf.debug.BaseTcfLaunch.done(BaseTcfLaunch.java:150)
+	at com.xilinx.sdk.tcf.debug.BaseTcfLaunch$5.run(BaseTcfLaunch.java:142)
+	at com.xilinx.sdk.tcf.debug.BaseTcfLaunch$1.run(BaseTcfLaunch.java:78)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:13.774
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:15.416
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+"ps7_cortexa9_1": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.494
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.511
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.519
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.527
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#14]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.534
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.550
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.558
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.573
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.580
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.616
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.624
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.659
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:16.666
+!MESSAGE XSCT Command: [fpga -file C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:19.010
+!MESSAGE XSCT command with result: [fpga -file C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:19.817
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:19.827
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-01-04 14:56:23.084
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.092
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.102
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#14]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.109
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.130
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.136
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.151
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.158
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.187
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.194
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.226
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.233
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.243
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.250
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.258
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#14]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.265
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.280
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.287
+!MESSAGE XSCT Command: [version -server], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.296
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2017.4]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.303
+!MESSAGE XSCT Command: [version], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.311
+!MESSAGE XSCT command with result: [version], Result: [null, 2017.4]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.318
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.332
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.339
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.370
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.377
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.391
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.398
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.428
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.434
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.449
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.456
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.485
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.492
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.506
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.512
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.541
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.548
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.562
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.569
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.598
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.605
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.619
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.626
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.655
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.662
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A81DE5A" && level == 0}], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.691
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A81DE5A" && level == 0}], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.698
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.707
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.712
+!MESSAGE XSCT Command: [source C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.722
+!MESSAGE XSCT command with result: [source C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.729
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.765
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.772
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.824
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_12]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.832
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.841
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.848
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.884
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.891
+!MESSAGE XSCT Command: [stop], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.916
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:23.925
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.524
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.531
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.546
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.553
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.588
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.595
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.648
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.656
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.696
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.703
+!MESSAGE XSCT Command: [dow C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.866
+!MESSAGE XSCT command with result: [dow C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.873
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.881
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:24.943
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:25.055
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:25.062
+!MESSAGE XSCT Command: [con], Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:56:25.077
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-27
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:54.792
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:54.802
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+"ps7_cortexa9_1": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.526
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.542
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.551
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.559
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#14]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.566
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.582
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.590
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.604
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.613
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.643
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.652
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.685
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:56.695
+!MESSAGE XSCT Command: [fpga -file C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:59.032
+!MESSAGE XSCT command with result: [fpga -file C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:59.840
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:58:59.851
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:03.018
+!MESSAGE XSCT Command: [disconnect tcfchan#14], Thread: Thread-1878
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:03.034
+!MESSAGE XSCT command with result: [disconnect tcfchan#14], Result: [null, ]. Thread: Thread-1878
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-01-04 14:59:04.019
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.026
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.040
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#15]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.049
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.071
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.082
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.097
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.105
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.139
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.148
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.190
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.197
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.207
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.215
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.223
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#15]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.230
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.248
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.255
+!MESSAGE XSCT Command: [version -server], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.267
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2017.4]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.274
+!MESSAGE XSCT Command: [version], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.283
+!MESSAGE XSCT command with result: [version], Result: [null, 2017.4]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.290
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.304
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.312
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.342
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.349
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.368
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.375
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.406
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.414
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.429
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.436
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.465
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.472
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.487
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.494
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.526
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.534
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.549
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.556
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.584
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.592
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.606
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.613
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.643
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.650
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A81DE5A" && level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.679
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A81DE5A" && level == 0}], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.685
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.693
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.700
+!MESSAGE XSCT Command: [source C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.709
+!MESSAGE XSCT command with result: [source C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.716
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.750
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:04.757
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.043
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_13]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.051
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.059
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.066
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.099
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.106
+!MESSAGE XSCT Command: [stop], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.142
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.149
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.645
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.651
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.667
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.675
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.713
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.720
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.774
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.781
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.817
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.824
+!MESSAGE XSCT Command: [dow C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.991
+!MESSAGE XSCT command with result: [dow C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:07.998
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:08.006
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:08.049
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:08.156
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:08.164
+!MESSAGE XSCT Command: [con], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 14:59:08.183
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:42.313
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:42.325
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+"ps7_cortexa9_1": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.659
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.676
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.683
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.692
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#15]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.699
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.715
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.723
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.738
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.744
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.774
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.781
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.814
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:44.822
+!MESSAGE XSCT Command: [fpga -file C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:47.157
+!MESSAGE XSCT command with result: [fpga -file C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:47.965
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:00:47.975
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.367
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.378
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.385
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.396
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.403
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.429
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0 ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "axi_uartlite_0 ps7_coresight_comp_0 ps7_uart_1",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.436
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.446
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.453
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.464
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.904
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.913
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.920
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.930
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.937
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.951
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, {"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.6",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.8",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.3",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.5",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.5",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.958
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.967
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.974
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.984
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.991
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:07.999
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:08.026
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:08.037
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:08.044
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:08.053
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:08.060
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:08.069
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:08.076
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:08.084
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:08.091
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp_xtmrctr_intr_example_1/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:03:08.172
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt_bsp_xtmrctr_intr_example_1/src], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-01-04 15:03:08.616
+!MESSAGE Indexed 'mastcam_mvmt_bsp_xtmrctr_intr_example_1' (1 sources, 39 headers) in 0.155 sec: 760 declarations; 1,695 references; 0 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.041%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:38.402
+!MESSAGE XSCT Command: [disconnect tcfchan#15], Thread: Thread-2039
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:38.416
+!MESSAGE XSCT command with result: [disconnect tcfchan#15], Result: [null, ]. Thread: Thread-2039
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-01-04 15:06:39.404
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.411
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.423
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#16]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.430
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.455
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.462
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.476
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.483
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.513
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.521
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.564
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.572
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.582
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.591
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.600
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#16]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.608
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.623
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.630
+!MESSAGE XSCT Command: [version -server], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.640
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2017.4]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.649
+!MESSAGE XSCT Command: [version], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.660
+!MESSAGE XSCT command with result: [version], Result: [null, 2017.4]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.667
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.682
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.690
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.721
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.728
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.744
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.751
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.781
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.789
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.804
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.813
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.846
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.857
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.878
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.885
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.917
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.928
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.944
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.951
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.987
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:39.994
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.008
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.015
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.053
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.061
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A81DE5A" && level == 0}], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.095
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A81DE5A" && level == 0}], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.102
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.109
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.116
+!MESSAGE XSCT Command: [source C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.126
+!MESSAGE XSCT command with result: [source C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.132
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.167
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:40.175
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:42.411
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_14]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:42.418
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:42.427
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:42.434
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:42.468
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:42.475
+!MESSAGE XSCT Command: [stop], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:42.521
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:42.528
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.038
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.044
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.066
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.073
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.112
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.119
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.197
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.204
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.241
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.248
+!MESSAGE XSCT Command: [dow C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.437
+!MESSAGE XSCT command with result: [dow C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.444
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.452
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.505
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.632
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.642
+!MESSAGE XSCT Command: [con], Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:06:43.658
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-30
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:11.215
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:11.229
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
+"ps7_cortexa9_1": "",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.252
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.271
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.278
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.287
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#16]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.294
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.310
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.317
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.332
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.340
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.370
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.377
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.418
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:13.427
+!MESSAGE XSCT Command: [fpga -file C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:15.763
+!MESSAGE XSCT command with result: [fpga -file C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:16.573
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:16.600
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:34.129
+!MESSAGE XSCT Command: [disconnect tcfchan#16], Thread: Thread-2113
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:34.144
+!MESSAGE XSCT command with result: [disconnect tcfchan#16], Result: [null, ]. Thread: Thread-2113
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-01-04 15:11:35.129
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.141
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.168
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#17]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.179
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.202
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.209
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.223
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.230
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.259
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.266
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.312
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.319
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.329
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.336
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.344
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#17]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.351
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.365
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.372
+!MESSAGE XSCT Command: [version -server], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.380
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2017.4]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.387
+!MESSAGE XSCT Command: [version], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.394
+!MESSAGE XSCT command with result: [version], Result: [null, 2017.4]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.401
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.415
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.422
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.451
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.458
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.472
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.479
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.508
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.515
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.529
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.537
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.567
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.574
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.589
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.596
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.626
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.633
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.647
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.654
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.682
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.690
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.704
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.710
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.739
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.746
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A81DE5A" && level == 0}], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.775
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A81DE5A" && level == 0}], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.781
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.789
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.796
+!MESSAGE XSCT Command: [source C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.804
+!MESSAGE XSCT command with result: [source C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.811
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.846
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:35.853
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:37.995
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_15]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.002
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.011
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.018
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.053
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.060
+!MESSAGE XSCT Command: [stop], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.097
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.104
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.598
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.604
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.622
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.629
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.675
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.682
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.773
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.779
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.815
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.821
+!MESSAGE XSCT Command: [dow C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.992
+!MESSAGE XSCT command with result: [dow C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:38.999
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:39.008
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:39.052
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:39.171
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:39.180
+!MESSAGE XSCT Command: [con], Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:11:39.196
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-32
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:01.019
+!MESSAGE XSCT Command: [disconnect tcfchan#17], Thread: Thread-2164
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:01.033
+!MESSAGE XSCT command with result: [disconnect tcfchan#17], Result: [null, ]. Thread: Thread-2164
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-01-04 15:12:02.021
+!MESSAGE Updating toolusage
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.030
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.042
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#18]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.050
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.070
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.077
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.093
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.100
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.132
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.140
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.189
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.197
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.217
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.226
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.234
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#18]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.242
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.257
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.264
+!MESSAGE XSCT Command: [version -server], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.273
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2017.4]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.280
+!MESSAGE XSCT Command: [version], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.289
+!MESSAGE XSCT command with result: [version], Result: [null, 2017.4]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.297
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.311
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.318
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.364
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.370
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.385
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.392
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.430
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.436
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.452
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.459
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.487
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.494
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.508
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.515
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.549
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.558
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.573
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.580
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.609
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.616
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.630
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zybo Z7 210351A81DE5A]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.637
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.673
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.680
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A81DE5A" && level == 0}], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.709
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zybo Z7 210351A81DE5A" && level == 0}], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.716
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.723
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.730
+!MESSAGE XSCT Command: [source C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.739
+!MESSAGE XSCT command with result: [source C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.746
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.781
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:02.788
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:04.920
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_16]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:04.927
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:04.936
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:04.943
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:04.978
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:04.986
+!MESSAGE XSCT Command: [stop], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:04.995
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.002
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.702
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.708
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.729
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.736
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.771
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.778
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.819
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.825
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.863
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:05.870
+!MESSAGE XSCT Command: [dow C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:06.052
+!MESSAGE XSCT command with result: [dow C:/Users/thoma/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:06.059
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:06.067
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:06.112
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:06.217
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:06.227
+!MESSAGE XSCT Command: [con], Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:12:06.242
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-33
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-01-04 15:13:33.317
+!MESSAGE Executed Webtalk command
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:13:33.341
+!MESSAGE XSCT Command: [disconnect tcfchan#18], Thread: Thread-2239
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-04 15:13:33.353
+!MESSAGE XSCT command with result: [disconnect tcfchan#18], Result: [null, ]. Thread: Thread-2239

@@ -1,0 +1,8 @@
+18:04:50 **** Incremental Build of configuration Debug for project mastcam_control_bsp_xintc_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+18:04:51 Build Finished (took 293ms)
+

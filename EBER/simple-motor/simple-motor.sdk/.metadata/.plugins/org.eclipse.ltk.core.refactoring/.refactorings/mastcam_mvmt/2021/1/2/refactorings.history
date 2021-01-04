@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mastcam_mvmt/src/helloworld.c&apos; to &apos;MastcamControl.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="MastcamControl.c" stamp="1609801128082" updateReferences="true"/>
+</session>

@@ -1,0 +1,38 @@
+15:44:48 **** Incremental Build of configuration Debug for project mastcam ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:94:9: warning: unused variable 'CntValue1' [-Wunused-variable]
+     int CntValue1;
+         ^~~~~~~~~
+../src/helloworld.c:87:23: warning: unused variable 'xscutimer_config' [-Wunused-variable]
+     XScuTimer_Config *xscutimer_config;
+                       ^~~~~~~~~~~~~~~~
+At top level:
+../src/helloworld.c:196:12: warning: 'TimerSetupIntrSystem' defined but not used [-Wunused-function]
+ static int TimerSetupIntrSystem(XScuGic *IntcInstancePtr,
+            ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:146:16: warning: 'rec_byte' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      rec_cnt = XUartPs_Recv(&ps_uart, rec_byte, 1);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mastcam.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_bsp/ps7_cortexa9_0/lib -o "mastcam.elf"  ./src/MastcamSupport.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam.elf  |tee "mastcam.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79696	   4264	  23392	 107352	  1a358	mastcam.elf
+'Finished building: mastcam.elf.size'
+' '
+
+15:44:49 Build Finished (took 1s.167ms)
+
