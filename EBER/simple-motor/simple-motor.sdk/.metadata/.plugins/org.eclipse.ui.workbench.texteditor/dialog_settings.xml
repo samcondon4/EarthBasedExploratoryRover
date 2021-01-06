@@ -2,22 +2,28 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="GIC" key="selection"/>
+		<item value="READ_POS_BUF_SIZE" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="READ_POS_BUF_SIZE"/>
+			<item value="0x1d"/>
+			<item value="0x02"/>
+			<item value="0x01"/>
+			<item value="0x55"/>
+			<item value="one_stop_buf"/>
+			<item value="two_stop_buf"/>
 			<item value="GIC"/>
-			<item value="UART"/>
-			<item value="DeviceId"/>
-			<item value="printf"/>
-			<item value="FIT"/>
-			<item value="Status"/>
-			<item value="INTC"/>
-			<item value="INT"/>
 		</list>
 		<list key="replacehistory">
+			<item value="READ_POS_BUF_SIZE_RX"/>
+			<item value="READ_POS_BUF_SIZE_TX"/>
+			<item value="SERVO_OR_MOTOR_MODE_WRITE"/>
+			<item value="TILT_MOTOR_ID"/>
+			<item value="PAN_MOTOR_ID"/>
+			<item value="LX16A_HEADER"/>
 			<item value="status"/>
 			<item value="MOVE_BUF_SIZE"/>
 		</list>
@@ -25,8 +31,8 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="327" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="436" key="DIALOG_HEIGHT"/>
-		<item value="1236" key="DIALOG_X_ORIGIN"/>
-		<item value="231" key="DIALOG_Y_ORIGIN"/>
+		<item value="434" key="DIALOG_HEIGHT"/>
+		<item value="1451" key="DIALOG_X_ORIGIN"/>
+		<item value="141" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

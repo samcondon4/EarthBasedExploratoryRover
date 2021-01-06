@@ -1,4 +1,4 @@
-15:13:26 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+23:06:18 **** Auto Build of configuration Debug for project mastcam_mvmt ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -6,10 +6,36 @@ a9-linaro-pre-build-step
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
 ../src/MastcamControl.c: In function 'main':
-../src/MastcamControl.c:90:16: warning: 'rec_byte' may be used uninitialized in this function [-Wmaybe-uninitialized]
-      rec_cnt = XUartPs_Recv(&(Main_Hw.ps_uart), rec_byte, 16);
-                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/MastcamControl.c:86:9: warning: unused variable 'rec_cnt' [-Wunused-variable]
+     int rec_cnt;
+         ^~~~~~~
+../src/MastcamControl.c:85:19: warning: unused variable 'rec_byte' [-Wunused-variable]
+     unsigned char rec_byte;
+                   ^~~~~~~~
+../src/MastcamControl.c:76:17: warning: variable 'Tail' set but not used [-Wunused-but-set-variable]
+  Mastcam_State *Tail;
+                 ^~~~
+../src/MastcamControl.c: In function 'Program':
+../src/MastcamControl.c:192:9: warning: 'prog_state' is used uninitialized in this function [-Wuninitialized]
+  return prog_state;
+         ^~~~~~~~~~
 'Finished building: ../src/MastcamControl.c'
+' '
+'Building file: ../src/MastcamSupport.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamSupport.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamSupport.d" -MT"src/MastcamSupport.o" -o "src/MastcamSupport.o" "../src/MastcamSupport.c"
+../src/MastcamSupport.c: In function 'mastcam_getpos':
+../src/MastcamSupport.c:132:6: warning: unused variable 'zenith_pos' [-Wunused-variable]
+  int zenith_pos;
+      ^~~~~~~~~~
+../src/MastcamSupport.c:131:6: warning: unused variable 'azimuth_pos' [-Wunused-variable]
+  int azimuth_pos;
+      ^~~~~~~~~~~
+At top level:
+../src/MastcamSupport.c:48:22: warning: 'tilt_read_pos_buf' defined but not used [-Wunused-variable]
+ static unsigned char tilt_read_pos_buf[READ_POS_BUF_SIZE_TX] = {LX16A_HEADER, LX16A_HEADER, TILT_MOTOR_ID, 0x03, SERVO_POS_READ, 0xde};
+                      ^~~~~~~~~~~~~~~~~
+'Finished building: ../src/MastcamSupport.c'
 ' '
 'Building target: mastcam_mvmt.elf'
 'Invoking: ARM v7 gcc linker'
@@ -19,9 +45,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  34816	   2844	  22600	  60260	   eb64	mastcam_mvmt.elf
+  34792	   2860	  22600	  60252	   eb5c	mastcam_mvmt.elf
 'Finished building: mastcam_mvmt.elf.size'
 ' '
 
-15:13:28 Build Finished (took 1s.96ms)
+23:06:19 Build Finished (took 1s.502ms)
 

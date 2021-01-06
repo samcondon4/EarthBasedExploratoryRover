@@ -23,9 +23,25 @@ typedef struct{
 	XUartLite uart_dev;
 } Mastcam;
 
+typedef enum {RGB, RED, GREEN, BLUE, EDGE} cam_channel;
+
+typedef struct{
+	signed short azimuth_pos;
+	signed short zenith_pos;
+	cam_channel channel;
+	unsigned int duration;
+}Mastcam_State_Data;
+
+typedef struct{
+	Mastcam_State_Data state_data;
+	struct Mastcam_State *next_state;
+}Mastcam_State;
 
 //Initialize uart device that will control mastcam actuators
 int mastcam_init(XScuGic *Intc, Mastcam *mastcam);
 
 //Move given mastcam instance in specified direction at fixed speed
 int mastcam_move(Mastcam *mastcam, int direction);
+
+//Get position of mastcam head
+int mastcam_getpos(Mastcam *mastcam);

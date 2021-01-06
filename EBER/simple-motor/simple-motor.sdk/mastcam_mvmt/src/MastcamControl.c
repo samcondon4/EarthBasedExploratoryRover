@@ -30,6 +30,9 @@
 #define d 0x64 //right
 #define s 0x73 //down
 #define w 0x77 //up
+#define r 0x72 //reprogram
+#define y 0x79 //yes
+#define n 0x6e
 
 //Contains structures for all hw devices controlled by main
 typedef struct{
@@ -38,8 +41,12 @@ typedef struct{
 	XScuGic int_cntrl;
 } MainHw;
 
+//State machine state definitions
+typedef enum {PROGRAM, RUN} SysState;
+typedef enum {ALLOC, PROG_STATE, DONE} ProgramState;
+//typedef enum {} RunState;
 
-//function prototypes////////////////////////////////////////////////
+//function prototypes/////////////////////////////////////////////////
 int MainHwInit(MainHw* main_hw);
 
 int TmrCtrSetupIntrSystem(XScuGic* IntcInstancePtr,
@@ -49,8 +56,13 @@ int TmrCtrSetupIntrSystem(XScuGic* IntcInstancePtr,
 				u8 TmrCtrNumber);
 
 void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber);
-/////////////////////////////////////////////////////////////////////
+void timer_pend(int pend_count);
+//////////////////////////////////////////////////////////////////////
 
+//System States///////////////////////////////////////////////////////
+ProgramState Program(SysState *SystemState, MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum);
+void Run(SysState *SystemState, MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum);
+//////////////////////////////////////////////////////////////////////
 
 //Global flag for timer counter
 volatile int TimerExpired;
@@ -58,68 +70,126 @@ volatile int TimerExpired;
 
 int main()
 {
+	//System Control variables////////////
 	Mastcam Mast;
+	Mastcam_State Head;
+	Mastcam_State *Tail;
+	Mastcam_State *CurState;
+	int StateNum;
 	MainHw Main_Hw;
+	SysState SystemState;
+	ProgramState ProgState;
+	//RunState RState;
+	///////////////////////////////////////
 
-    unsigned char *rec_byte;
+    unsigned char rec_byte;
     int rec_cnt;
     int status;
 
+    //System Initialization/////////////////////////////////////////
     init_platform();
     //Initialize exception table
     Xil_ExceptionInit();
     //Enable non-critical exceptions
     Xil_ExceptionEnable();
 
-    //initialize system hardware
     status = MainHwInit(&Main_Hw);
         if(status != XST_SUCCESS){
         	return XST_FAILURE;
         }
     mastcam_init(&(Main_Hw.int_cntrl), &Mast);
 
-
+    StateNum = 0;
+    CurState = &Head;
+    Tail = &Head;
+    /////////////////////////////////////////////////////////////////
 
     while(1){
 
-    	while(TimerExpired != 1){
-    		//wait for timer to expire
-    	}
-    	TimerExpired = 0;
+    	switch(SystemState){
+			case(PROGRAM):
+				ProgState = Program(&SystemState,&Main_Hw, &Mast,CurState,StateNum);
+				switch(ProgState){
+					case(ALLOC):
+						//Allocate new Mastcam state and append to list
+					break;
 
-    	rec_cnt = XUartPs_Recv(&(Main_Hw.ps_uart), rec_byte, 16);
+					case(PROG_STATE):
+						//do nothing here, allow Program to finish populating state data
+					break;
+
+					case(DONE):
+						SystemState = RUN;
+					break;
+				}
+			break;
+
+			case(RUN):
+
+			break;
+    	}
+
+    	//Program/////////////////////////////////////////////////////////////////////
+    	/*
+    	timer_pend(1);
+
+    	rec_cnt = XUartPs_Recv(&(Main_Hw.ps_uart), &rec_byte, 16);
 
     	if(rec_cnt != 0){
-    		switch(*rec_byte){
-				case(a):
-					if(!(Mast.move_state & LEFT))
-						mastcam_move(&Mast,LEFT);
-				break;
 
-				case(d):
-					if(!(Mast.move_state & RIGHT))
-						mastcam_move(&Mast,RIGHT);
-				break;
+    		if(rec_byte != '\r'){
+        		switch(rec_byte){
+    				case(a):
+    					if(!(Mast.move_state & LEFT))
+    						mastcam_move(&Mast,LEFT);
+    				break;
 
-				case(s):
-					if(!(Mast.move_state & DOWN))
-						mastcam_move(&Mast,DOWN);
-				break;
+    				case(d):
+    					if(!(Mast.move_state & RIGHT))
+    						mastcam_move(&Mast,RIGHT);
+    				break;
 
-				case(w):
-					if(!(Mast.move_state & UP))
-						mastcam_move(&Mast,UP);
-				break;
+    				case(s):
+    					if(!(Mast.move_state & DOWN))
+    						mastcam_move(&Mast,DOWN);
+    				break;
+
+    				case(w):
+    					if(!(Mast.move_state & UP))
+    						mastcam_move(&Mast,UP);
+    				break;
+        		}
     		}
+    		else{
+    			mastcam_getpos(&Mast);
+    		}
+
     	}
     	else if(Mast.move_state != STOP){
     		mastcam_move(&Mast,STOP);
     	}
+		*/
+    	////////////////////////////////////////////////////////////////////////////
+
+    	//Run////////////////////////////////////////////////////////////////////////
+
+    	////////////////////////////////////////////////////////////////////////////
+
     }
 
 	 cleanup_platform();
 	 return 0;
 
+}
+
+
+//Program movement state machine
+ProgramState Program(SysState *SystemState, MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum){
+
+	ProgramState prog_state;
+	//do the stuff
+
+	return prog_state;
 }
 
 
@@ -232,4 +302,10 @@ void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
 
 }
 
-
+//Pend for pend_count timer interrupts
+void timer_pend(int pend_count){
+	while(TimerExpired < pend_count){
+		//pend
+	}
+	TimerExpired = 0;
+}

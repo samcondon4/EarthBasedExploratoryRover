@@ -5631,3 +5631,1926 @@ con
 
 15:12:06 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
 15:13:33 INFO  : Disconnected from the channel tcfchan#18.
+15:58:00 INFO  : Registering command handlers for SDK TCF services
+15:58:01 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\temp_xsdb_launch_script.tcl
+15:58:04 INFO  : XSCT server has started successfully.
+15:58:07 INFO  : Successfully done setting XSCT server connection channel  
+15:58:07 INFO  : Processing command line option -hwspec C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper.hdf.
+15:58:07 INFO  : Successfully done setting SDK workspace  
+15:59:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:59:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+15:59:40 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:59:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+15:59:47 INFO  : 'fpga -state' command is executed.
+15:59:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:59:47 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+15:59:47 INFO  : 'jtag frequency' command is executed.
+15:59:47 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:59:47 INFO  : Context for 'APU' is selected.
+15:59:47 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:59:47 INFO  : 'configparams force-mem-access 1' command is executed.
+15:59:47 INFO  : Context for 'APU' is selected.
+15:59:47 INFO  : 'stop' command is executed.
+15:59:48 INFO  : 'ps7_init' command is executed.
+15:59:48 INFO  : 'ps7_post_config' command is executed.
+15:59:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:59:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:59:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:59:48 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:59:48 INFO  : 'configparams force-mem-access 0' command is executed.
+15:59:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:59:48 INFO  : Memory regions updated for context APU
+15:59:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:59:49 INFO  : 'con' command is executed.
+15:59:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+15:59:49 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+16:00:26 INFO  : Disconnected from the channel tcfchan#1.
+16:00:39 INFO  : Registering command handlers for SDK TCF services
+16:00:40 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\temp_xsdb_launch_script.tcl
+16:00:42 INFO  : XSCT server has started successfully.
+16:00:42 INFO  : Successfully done setting XSCT server connection channel  
+16:00:43 INFO  : Successfully done setting SDK workspace  
+16:00:43 INFO  : Processing command line option -hwspec C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper.hdf.
+16:00:43 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+16:10:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+16:10:17 INFO  : 'fpga -state' command is executed.
+16:10:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:10:17 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+16:10:17 INFO  : 'jtag frequency' command is executed.
+16:10:17 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:10:18 INFO  : Context for 'APU' is selected.
+16:10:18 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:10:18 INFO  : 'configparams force-mem-access 1' command is executed.
+16:10:19 INFO  : Context for 'APU' is selected.
+16:10:19 INFO  : 'stop' command is executed.
+16:10:19 INFO  : 'ps7_init' command is executed.
+16:10:19 INFO  : 'ps7_post_config' command is executed.
+16:10:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:10:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:10:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:10:21 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:10:22 INFO  : 'configparams force-mem-access 0' command is executed.
+16:10:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:10:22 INFO  : Memory regions updated for context APU
+16:10:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:10:22 INFO  : 'con' command is executed.
+16:10:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+16:10:22 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+16:11:18 INFO  : Disconnected from the channel tcfchan#1.
+16:11:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+16:11:20 INFO  : 'fpga -state' command is executed.
+16:11:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:11:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+16:11:20 INFO  : 'jtag frequency' command is executed.
+16:11:20 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:11:20 INFO  : Context for 'APU' is selected.
+16:11:23 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:11:23 INFO  : 'configparams force-mem-access 1' command is executed.
+16:11:23 INFO  : Context for 'APU' is selected.
+16:11:23 INFO  : 'stop' command is executed.
+16:11:23 INFO  : 'ps7_init' command is executed.
+16:11:23 INFO  : 'ps7_post_config' command is executed.
+16:11:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:11:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:24 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:11:24 INFO  : 'configparams force-mem-access 0' command is executed.
+16:11:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:11:24 INFO  : Memory regions updated for context APU
+16:11:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:24 INFO  : 'con' command is executed.
+16:11:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+16:11:24 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+16:11:52 INFO  : Disconnected from the channel tcfchan#2.
+16:11:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+16:11:54 INFO  : 'fpga -state' command is executed.
+16:11:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:11:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+16:11:54 INFO  : 'jtag frequency' command is executed.
+16:11:54 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:11:54 INFO  : Context for 'APU' is selected.
+16:11:54 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:11:54 INFO  : 'configparams force-mem-access 1' command is executed.
+16:11:54 INFO  : Context for 'APU' is selected.
+16:11:54 INFO  : 'stop' command is executed.
+16:11:55 INFO  : 'ps7_init' command is executed.
+16:11:55 INFO  : 'ps7_post_config' command is executed.
+16:11:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:11:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:55 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:11:55 INFO  : 'configparams force-mem-access 0' command is executed.
+16:11:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:11:55 INFO  : Memory regions updated for context APU
+16:11:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:11:55 INFO  : 'con' command is executed.
+16:11:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+16:11:55 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+16:12:48 INFO  : Disconnected from the channel tcfchan#3.
+16:12:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+16:12:49 INFO  : 'fpga -state' command is executed.
+16:12:51 INFO  : Memory regions updated for context APU
+16:12:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+16:12:57 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:13:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+16:13:01 INFO  : 'fpga -state' command is executed.
+16:13:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+16:13:02 INFO  : 'jtag frequency' command is executed.
+16:13:02 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:13:02 INFO  : Context for 'APU' is selected.
+16:13:02 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:13:02 INFO  : 'configparams force-mem-access 1' command is executed.
+16:13:02 INFO  : Context for 'APU' is selected.
+16:13:02 INFO  : 'stop' command is executed.
+16:13:03 INFO  : 'ps7_init' command is executed.
+16:13:03 INFO  : 'ps7_post_config' command is executed.
+16:13:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:13:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:03 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:13:03 INFO  : 'configparams force-mem-access 0' command is executed.
+16:13:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:13:03 INFO  : Memory regions updated for context APU
+16:13:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:03 INFO  : 'con' command is executed.
+16:13:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+16:13:03 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+16:13:46 INFO  : Disconnected from the channel tcfchan#4.
+16:13:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+16:13:47 INFO  : 'fpga -state' command is executed.
+16:13:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+16:13:48 INFO  : 'jtag frequency' command is executed.
+16:13:48 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:13:48 INFO  : Context for 'APU' is selected.
+16:13:48 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:13:48 INFO  : 'configparams force-mem-access 1' command is executed.
+16:13:48 INFO  : Context for 'APU' is selected.
+16:13:48 INFO  : 'stop' command is executed.
+16:13:49 INFO  : 'ps7_init' command is executed.
+16:13:49 INFO  : 'ps7_post_config' command is executed.
+16:13:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:13:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:49 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:13:49 INFO  : 'configparams force-mem-access 0' command is executed.
+16:13:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:13:49 INFO  : Memory regions updated for context APU
+16:13:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:49 INFO  : 'con' command is executed.
+16:13:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+16:13:49 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+16:55:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:55:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+16:55:08 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:55:14 INFO  : Disconnected from the channel tcfchan#5.
+16:55:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+16:55:15 INFO  : 'fpga -state' command is executed.
+16:55:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:55:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+16:55:16 INFO  : 'jtag frequency' command is executed.
+16:55:16 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:55:16 INFO  : Context for 'APU' is selected.
+16:55:16 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:55:16 INFO  : 'configparams force-mem-access 1' command is executed.
+16:55:16 INFO  : Context for 'APU' is selected.
+16:55:16 INFO  : 'stop' command is executed.
+16:55:17 INFO  : 'ps7_init' command is executed.
+16:55:17 INFO  : 'ps7_post_config' command is executed.
+16:55:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:55:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:17 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:55:17 INFO  : 'configparams force-mem-access 0' command is executed.
+16:55:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:55:17 INFO  : Memory regions updated for context APU
+16:55:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:17 INFO  : 'con' command is executed.
+16:55:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+16:55:17 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+17:36:21 INFO  : Disconnected from the channel tcfchan#6.
+21:19:16 INFO  : Registering command handlers for SDK TCF services
+21:19:16 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\temp_xsdb_launch_script.tcl
+21:19:18 INFO  : XSCT server has started successfully.
+21:19:18 INFO  : Successfully done setting XSCT server connection channel  
+21:19:19 INFO  : Successfully done setting SDK workspace  
+21:19:19 INFO  : Processing command line option -hwspec C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper.hdf.
+21:19:19 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+21:42:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:43:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:43:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:43:03 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:43:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:43:08 INFO  : 'fpga -state' command is executed.
+21:43:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:43:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:43:08 INFO  : 'jtag frequency' command is executed.
+21:43:08 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:43:08 INFO  : Context for 'APU' is selected.
+21:43:09 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:43:09 INFO  : 'configparams force-mem-access 1' command is executed.
+21:43:09 INFO  : Context for 'APU' is selected.
+21:43:09 INFO  : 'stop' command is executed.
+21:43:09 INFO  : 'ps7_init' command is executed.
+21:43:09 INFO  : 'ps7_post_config' command is executed.
+21:43:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:43:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:10 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:43:10 INFO  : 'configparams force-mem-access 0' command is executed.
+21:43:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:43:10 INFO  : Memory regions updated for context APU
+21:43:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:10 INFO  : 'con' command is executed.
+21:43:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:43:10 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:46:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:46:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:46:21 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:46:27 INFO  : Disconnected from the channel tcfchan#1.
+21:46:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:46:28 INFO  : 'fpga -state' command is executed.
+21:46:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:46:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:46:28 INFO  : 'jtag frequency' command is executed.
+21:46:28 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:46:29 INFO  : Context for 'APU' is selected.
+21:46:31 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:46:31 INFO  : 'configparams force-mem-access 1' command is executed.
+21:46:31 INFO  : Context for 'APU' is selected.
+21:46:31 INFO  : 'stop' command is executed.
+21:46:32 INFO  : 'ps7_init' command is executed.
+21:46:32 INFO  : 'ps7_post_config' command is executed.
+21:46:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:46:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:46:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:46:32 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:46:32 INFO  : 'configparams force-mem-access 0' command is executed.
+21:46:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:46:32 INFO  : Memory regions updated for context APU
+21:46:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:46:32 INFO  : 'con' command is executed.
+21:46:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:46:32 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:47:19 INFO  : Disconnected from the channel tcfchan#2.
+21:47:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:47:20 INFO  : 'fpga -state' command is executed.
+21:47:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:47:21 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:47:21 INFO  : 'jtag frequency' command is executed.
+21:47:21 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:47:21 INFO  : Context for 'APU' is selected.
+21:47:21 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:47:21 INFO  : 'configparams force-mem-access 1' command is executed.
+21:47:21 INFO  : Context for 'APU' is selected.
+21:47:21 INFO  : 'stop' command is executed.
+21:47:21 INFO  : 'ps7_init' command is executed.
+21:47:21 INFO  : 'ps7_post_config' command is executed.
+21:47:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:47:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:47:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:47:22 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:47:22 INFO  : 'configparams force-mem-access 0' command is executed.
+21:47:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:47:22 INFO  : Memory regions updated for context APU
+21:47:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:47:22 INFO  : 'con' command is executed.
+21:47:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:47:22 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:48:06 INFO  : Disconnected from the channel tcfchan#3.
+21:48:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:48:08 INFO  : 'fpga -state' command is executed.
+21:48:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:48:08 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:48:08 INFO  : 'jtag frequency' command is executed.
+21:48:08 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:48:08 INFO  : Context for 'APU' is selected.
+21:48:08 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:48:08 INFO  : 'configparams force-mem-access 1' command is executed.
+21:48:08 INFO  : Context for 'APU' is selected.
+21:48:08 INFO  : 'stop' command is executed.
+21:48:09 INFO  : 'ps7_init' command is executed.
+21:48:09 INFO  : 'ps7_post_config' command is executed.
+21:48:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:48:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:48:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:48:09 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:48:09 INFO  : 'configparams force-mem-access 0' command is executed.
+21:48:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:48:09 INFO  : Memory regions updated for context APU
+21:48:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:48:09 INFO  : 'con' command is executed.
+21:48:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:48:09 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:48:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:48:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:48:38 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:48:44 INFO  : Disconnected from the channel tcfchan#4.
+21:48:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:48:45 INFO  : 'fpga -state' command is executed.
+21:48:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:48:45 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:48:45 INFO  : 'jtag frequency' command is executed.
+21:48:45 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:48:45 INFO  : Context for 'APU' is selected.
+21:48:46 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:48:46 INFO  : 'configparams force-mem-access 1' command is executed.
+21:48:46 INFO  : Context for 'APU' is selected.
+21:48:46 INFO  : 'stop' command is executed.
+21:48:46 INFO  : 'ps7_init' command is executed.
+21:48:46 INFO  : 'ps7_post_config' command is executed.
+21:48:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:48:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:48:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:48:46 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:48:46 INFO  : 'configparams force-mem-access 0' command is executed.
+21:48:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:48:47 INFO  : Memory regions updated for context APU
+21:48:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:48:47 INFO  : 'con' command is executed.
+21:48:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:48:47 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:50:30 INFO  : Disconnected from the channel tcfchan#5.
+21:50:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:50:31 INFO  : 'fpga -state' command is executed.
+21:50:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:50:32 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:50:32 INFO  : 'jtag frequency' command is executed.
+21:50:32 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:50:32 INFO  : Context for 'APU' is selected.
+21:50:32 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:50:32 INFO  : 'configparams force-mem-access 1' command is executed.
+21:50:32 INFO  : Context for 'APU' is selected.
+21:50:32 INFO  : 'stop' command is executed.
+21:50:32 INFO  : 'ps7_init' command is executed.
+21:50:32 INFO  : 'ps7_post_config' command is executed.
+21:50:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:50:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:50:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:50:33 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:50:33 INFO  : 'configparams force-mem-access 0' command is executed.
+21:50:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:50:33 INFO  : Memory regions updated for context APU
+21:50:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:50:33 INFO  : 'con' command is executed.
+21:50:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:50:33 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:50:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:51:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:51:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:51:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:51:54 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:52:00 INFO  : Disconnected from the channel tcfchan#6.
+21:52:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:52:01 INFO  : 'fpga -state' command is executed.
+21:52:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:52:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:52:02 INFO  : 'jtag frequency' command is executed.
+21:52:02 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:52:02 INFO  : Context for 'APU' is selected.
+21:52:02 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:52:02 INFO  : 'configparams force-mem-access 1' command is executed.
+21:52:02 INFO  : Context for 'APU' is selected.
+21:52:02 INFO  : 'stop' command is executed.
+21:52:02 INFO  : 'ps7_init' command is executed.
+21:52:02 INFO  : 'ps7_post_config' command is executed.
+21:52:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:52:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:52:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:52:03 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:52:03 INFO  : 'configparams force-mem-access 0' command is executed.
+21:52:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:52:03 INFO  : Memory regions updated for context APU
+21:52:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:52:03 INFO  : 'con' command is executed.
+21:52:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:52:03 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:52:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:52:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:52:48 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:52:59 INFO  : Disconnected from the channel tcfchan#7.
+21:53:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:53:00 INFO  : 'fpga -state' command is executed.
+21:53:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:53:01 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:53:01 INFO  : 'jtag frequency' command is executed.
+21:53:01 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:53:01 INFO  : Context for 'APU' is selected.
+21:53:01 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:53:01 INFO  : 'configparams force-mem-access 1' command is executed.
+21:53:01 INFO  : Context for 'APU' is selected.
+21:53:01 INFO  : 'stop' command is executed.
+21:53:02 INFO  : 'ps7_init' command is executed.
+21:53:02 INFO  : 'ps7_post_config' command is executed.
+21:53:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:53:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:53:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:53:02 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:53:02 INFO  : 'configparams force-mem-access 0' command is executed.
+21:53:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:53:02 INFO  : Memory regions updated for context APU
+21:53:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:53:02 INFO  : 'con' command is executed.
+21:53:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:53:02 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:54:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:54:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:54:57 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:55:05 INFO  : Disconnected from the channel tcfchan#8.
+21:55:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:55:06 INFO  : 'fpga -state' command is executed.
+21:55:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:55:07 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:55:07 INFO  : 'jtag frequency' command is executed.
+21:55:07 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:55:07 INFO  : Context for 'APU' is selected.
+21:55:07 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:55:07 INFO  : 'configparams force-mem-access 1' command is executed.
+21:55:07 INFO  : Context for 'APU' is selected.
+21:55:07 INFO  : 'stop' command is executed.
+21:55:08 INFO  : 'ps7_init' command is executed.
+21:55:08 INFO  : 'ps7_post_config' command is executed.
+21:55:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:55:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:55:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:55:08 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:55:08 INFO  : 'configparams force-mem-access 0' command is executed.
+21:55:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:55:08 INFO  : Memory regions updated for context APU
+21:55:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:55:08 INFO  : 'con' command is executed.
+21:55:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:55:08 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+22:10:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:10:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+22:10:29 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:10:36 INFO  : Disconnected from the channel tcfchan#9.
+22:10:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+22:10:37 INFO  : 'fpga -state' command is executed.
+22:10:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:10:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+22:10:37 INFO  : 'jtag frequency' command is executed.
+22:10:37 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:10:37 INFO  : Context for 'APU' is selected.
+22:10:37 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:10:37 INFO  : 'configparams force-mem-access 1' command is executed.
+22:10:37 INFO  : Context for 'APU' is selected.
+22:10:37 INFO  : 'stop' command is executed.
+22:10:38 INFO  : 'ps7_init' command is executed.
+22:10:38 INFO  : 'ps7_post_config' command is executed.
+22:10:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:10:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:10:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:10:38 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:10:38 INFO  : 'configparams force-mem-access 0' command is executed.
+22:10:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:10:38 INFO  : Memory regions updated for context APU
+22:10:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:10:38 INFO  : 'con' command is executed.
+22:10:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+22:10:38 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+22:12:29 INFO  : Disconnected from the channel tcfchan#10.
+22:12:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+22:12:30 INFO  : 'fpga -state' command is executed.
+22:12:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:12:31 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+22:12:31 INFO  : 'jtag frequency' command is executed.
+22:12:31 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:12:31 INFO  : Context for 'APU' is selected.
+22:12:31 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:12:31 INFO  : 'configparams force-mem-access 1' command is executed.
+22:12:31 INFO  : Context for 'APU' is selected.
+22:12:31 INFO  : 'stop' command is executed.
+22:12:31 INFO  : 'ps7_init' command is executed.
+22:12:31 INFO  : 'ps7_post_config' command is executed.
+22:12:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:12:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:12:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:12:32 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:12:32 INFO  : 'configparams force-mem-access 0' command is executed.
+22:12:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:12:32 INFO  : Memory regions updated for context APU
+22:12:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:12:32 INFO  : 'con' command is executed.
+22:12:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+22:12:32 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+22:12:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:12:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+22:12:56 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:13:02 INFO  : Disconnected from the channel tcfchan#11.
+22:13:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+22:13:03 INFO  : 'fpga -state' command is executed.
+22:13:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:13:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+22:13:04 INFO  : 'jtag frequency' command is executed.
+22:13:04 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:13:04 INFO  : Context for 'APU' is selected.
+22:13:04 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:13:04 INFO  : 'configparams force-mem-access 1' command is executed.
+22:13:04 INFO  : Context for 'APU' is selected.
+22:13:04 INFO  : 'stop' command is executed.
+22:13:04 INFO  : 'ps7_init' command is executed.
+22:13:04 INFO  : 'ps7_post_config' command is executed.
+22:13:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:13:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:05 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:13:05 INFO  : 'configparams force-mem-access 0' command is executed.
+22:13:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:13:05 INFO  : Memory regions updated for context APU
+22:13:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:05 INFO  : 'con' command is executed.
+22:13:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+22:13:05 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+22:19:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:19:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+22:19:03 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:19:08 INFO  : Disconnected from the channel tcfchan#12.
+22:19:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+22:19:09 INFO  : 'fpga -state' command is executed.
+22:19:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:19:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+22:19:10 INFO  : 'jtag frequency' command is executed.
+22:19:10 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:19:10 INFO  : Context for 'APU' is selected.
+22:19:10 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:19:10 INFO  : 'configparams force-mem-access 1' command is executed.
+22:19:10 INFO  : Context for 'APU' is selected.
+22:19:10 INFO  : 'stop' command is executed.
+22:19:11 INFO  : 'ps7_init' command is executed.
+22:19:11 INFO  : 'ps7_post_config' command is executed.
+22:19:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:19:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:11 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:19:11 INFO  : 'configparams force-mem-access 0' command is executed.
+22:19:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:19:11 INFO  : Memory regions updated for context APU
+22:19:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:11 INFO  : 'con' command is executed.
+22:19:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+22:19:11 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+22:23:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:23:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+22:23:05 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:23:15 INFO  : Disconnected from the channel tcfchan#13.
+22:23:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+22:23:16 INFO  : 'fpga -state' command is executed.
+22:23:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:23:17 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+22:23:17 INFO  : 'jtag frequency' command is executed.
+22:23:17 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:23:17 INFO  : Context for 'APU' is selected.
+22:23:17 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:23:17 INFO  : 'configparams force-mem-access 1' command is executed.
+22:23:17 INFO  : Context for 'APU' is selected.
+22:23:17 INFO  : 'stop' command is executed.
+22:23:17 INFO  : 'ps7_init' command is executed.
+22:23:17 INFO  : 'ps7_post_config' command is executed.
+22:23:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:23:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:23:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:23:18 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:23:18 INFO  : 'configparams force-mem-access 0' command is executed.
+22:23:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:23:18 INFO  : Memory regions updated for context APU
+22:23:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:23:18 INFO  : 'con' command is executed.
+22:23:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+22:23:18 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+22:24:48 INFO  : Disconnected from the channel tcfchan#14.
+23:03:15 INFO  : Registering command handlers for SDK TCF services
+23:03:16 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\temp_xsdb_launch_script.tcl
+23:03:19 INFO  : XSCT server has started successfully.
+23:03:19 INFO  : Successfully done setting XSCT server connection channel  
+23:03:22 INFO  : Successfully done setting SDK workspace  
+23:03:22 INFO  : Processing command line option -hwspec C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper.hdf.
+23:03:22 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
+23:04:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:04:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:04:41 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:04:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:04:48 INFO  : 'fpga -state' command is executed.
+23:04:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:04:49 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+23:04:49 INFO  : 'jtag frequency' command is executed.
+23:04:49 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:04:49 INFO  : Context for 'APU' is selected.
+23:04:49 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:04:49 INFO  : 'configparams force-mem-access 1' command is executed.
+23:04:49 INFO  : Context for 'APU' is selected.
+23:04:49 INFO  : 'stop' command is executed.
+23:04:49 INFO  : 'ps7_init' command is executed.
+23:04:49 INFO  : 'ps7_post_config' command is executed.
+23:04:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:04:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:04:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:04:50 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:04:50 INFO  : 'configparams force-mem-access 0' command is executed.
+23:04:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:04:50 INFO  : Memory regions updated for context APU
+23:04:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:04:50 INFO  : 'con' command is executed.
+23:04:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+23:04:50 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+23:06:35 INFO  : Disconnected from the channel tcfchan#1.
+23:06:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:06:36 INFO  : 'fpga -state' command is executed.
+23:06:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:37 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+23:06:37 INFO  : 'jtag frequency' command is executed.
+23:06:37 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:06:37 INFO  : Context for 'APU' is selected.
+23:06:39 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:06:39 INFO  : 'configparams force-mem-access 1' command is executed.
+23:06:39 INFO  : Context for 'APU' is selected.
+23:06:39 INFO  : 'stop' command is executed.
+23:06:39 INFO  : 'ps7_init' command is executed.
+23:06:39 INFO  : 'ps7_post_config' command is executed.
+23:06:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:06:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:40 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:06:40 INFO  : 'configparams force-mem-access 0' command is executed.
+23:06:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:06:40 INFO  : Memory regions updated for context APU
+23:06:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:06:40 INFO  : 'con' command is executed.
+23:06:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+23:06:40 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+23:06:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:06:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:07:01 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:07:08 INFO  : Disconnected from the channel tcfchan#2.
+23:07:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:07:09 INFO  : 'fpga -state' command is executed.
+23:07:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:07:10 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+23:07:10 INFO  : 'jtag frequency' command is executed.
+23:07:10 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:07:10 INFO  : Context for 'APU' is selected.
+23:07:10 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:07:10 INFO  : 'configparams force-mem-access 1' command is executed.
+23:07:10 INFO  : Context for 'APU' is selected.
+23:07:10 INFO  : 'stop' command is executed.
+23:07:11 INFO  : 'ps7_init' command is executed.
+23:07:11 INFO  : 'ps7_post_config' command is executed.
+23:07:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:07:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:07:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:07:11 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:07:11 INFO  : 'configparams force-mem-access 0' command is executed.
+23:07:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:07:11 INFO  : Memory regions updated for context APU
+23:07:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:07:11 INFO  : 'con' command is executed.
+23:07:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+23:07:11 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+23:13:35 INFO  : Disconnected from the channel tcfchan#3.
+23:13:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:13:37 INFO  : 'fpga -state' command is executed.
+23:13:38 INFO  : Memory regions updated for context APU
+23:13:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:13:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:13:43 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:13:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:13:47 INFO  : 'fpga -state' command is executed.
+23:13:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:13:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+23:13:48 INFO  : 'jtag frequency' command is executed.
+23:13:48 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:13:48 INFO  : Context for 'APU' is selected.
+23:13:48 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:13:48 INFO  : 'configparams force-mem-access 1' command is executed.
+23:13:48 INFO  : Context for 'APU' is selected.
+23:13:48 INFO  : 'stop' command is executed.
+23:13:48 INFO  : 'ps7_init' command is executed.
+23:13:48 INFO  : 'ps7_post_config' command is executed.
+23:13:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:13:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:13:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:13:49 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:13:49 INFO  : 'configparams force-mem-access 0' command is executed.
+23:13:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:13:49 INFO  : Memory regions updated for context APU
+23:13:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:13:49 INFO  : 'con' command is executed.
+23:13:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+23:13:49 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+23:15:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:15:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:15:20 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:15:25 INFO  : Disconnected from the channel tcfchan#4.
+23:15:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:15:26 INFO  : 'fpga -state' command is executed.
+23:15:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:15:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+23:15:27 INFO  : 'jtag frequency' command is executed.
+23:15:27 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:15:27 INFO  : Context for 'APU' is selected.
+23:15:27 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:15:27 INFO  : 'configparams force-mem-access 1' command is executed.
+23:15:27 INFO  : Context for 'APU' is selected.
+23:15:27 INFO  : 'stop' command is executed.
+23:15:27 INFO  : 'ps7_init' command is executed.
+23:15:27 INFO  : 'ps7_post_config' command is executed.
+23:15:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:15:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:15:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:15:28 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:15:28 INFO  : 'configparams force-mem-access 0' command is executed.
+23:15:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:15:28 INFO  : Memory regions updated for context APU
+23:15:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:15:28 INFO  : 'con' command is executed.
+23:15:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+23:15:28 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+23:18:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:18:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:18:24 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:18:29 INFO  : Disconnected from the channel tcfchan#5.
+23:18:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:18:30 INFO  : 'fpga -state' command is executed.
+23:18:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:18:30 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+23:18:30 INFO  : 'jtag frequency' command is executed.
+23:18:30 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:18:30 INFO  : Context for 'APU' is selected.
+23:18:30 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:18:30 INFO  : 'configparams force-mem-access 1' command is executed.
+23:18:30 INFO  : Context for 'APU' is selected.
+23:18:31 INFO  : 'stop' command is executed.
+23:18:31 INFO  : 'ps7_init' command is executed.
+23:18:31 INFO  : 'ps7_post_config' command is executed.
+23:18:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:18:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:18:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:18:32 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:18:32 INFO  : 'configparams force-mem-access 0' command is executed.
+23:18:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:18:32 INFO  : Memory regions updated for context APU
+23:18:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:18:32 INFO  : 'con' command is executed.
+23:18:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+23:18:32 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+23:19:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:19:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:19:56 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:20:32 INFO  : Disconnected from the channel tcfchan#6.
+23:20:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:20:33 INFO  : 'fpga -state' command is executed.
+23:20:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:20:34 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+23:20:34 INFO  : 'jtag frequency' command is executed.
+23:20:34 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:20:34 INFO  : Context for 'APU' is selected.
+23:20:34 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:20:34 INFO  : 'configparams force-mem-access 1' command is executed.
+23:20:34 INFO  : Context for 'APU' is selected.
+23:20:34 INFO  : 'stop' command is executed.
+23:20:34 INFO  : 'ps7_init' command is executed.
+23:20:34 INFO  : 'ps7_post_config' command is executed.
+23:20:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:20:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:35 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:20:35 INFO  : 'configparams force-mem-access 0' command is executed.
+23:20:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:20:35 INFO  : Memory regions updated for context APU
+23:20:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:35 INFO  : 'con' command is executed.
+23:20:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+23:20:35 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+23:24:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:24:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:24:10 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:24:19 INFO  : Disconnected from the channel tcfchan#7.
+23:24:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:24:20 INFO  : 'fpga -state' command is executed.
+23:24:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:24:20 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+23:24:20 INFO  : 'jtag frequency' command is executed.
+23:24:20 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:24:20 INFO  : Context for 'APU' is selected.
+23:24:20 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:24:20 INFO  : 'configparams force-mem-access 1' command is executed.
+23:24:20 INFO  : Context for 'APU' is selected.
+23:24:20 INFO  : 'stop' command is executed.
+23:24:21 INFO  : 'ps7_init' command is executed.
+23:24:21 INFO  : 'ps7_post_config' command is executed.
+23:24:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:24:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:24:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:24:21 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:24:21 INFO  : 'configparams force-mem-access 0' command is executed.
+23:24:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:24:21 INFO  : Memory regions updated for context APU
+23:24:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:24:21 INFO  : 'con' command is executed.
+23:24:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+23:24:21 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+23:25:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:25:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:25:15 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:25:37 INFO  : Disconnected from the channel tcfchan#8.
+23:25:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:25:38 INFO  : 'fpga -state' command is executed.
+23:25:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:25:38 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+23:25:38 INFO  : 'jtag frequency' command is executed.
+23:25:38 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:25:38 INFO  : Context for 'APU' is selected.
+23:25:38 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:25:38 INFO  : 'configparams force-mem-access 1' command is executed.
+23:25:38 INFO  : Context for 'APU' is selected.
+23:25:38 INFO  : 'stop' command is executed.
+23:25:39 INFO  : 'ps7_init' command is executed.
+23:25:39 INFO  : 'ps7_post_config' command is executed.
+23:25:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:25:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:25:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:25:39 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:25:39 INFO  : 'configparams force-mem-access 0' command is executed.
+23:25:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:25:39 INFO  : Memory regions updated for context APU
+23:25:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:25:40 INFO  : 'con' command is executed.
+23:25:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+23:25:40 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+23:26:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:26:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:26:43 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:26:48 INFO  : Disconnected from the channel tcfchan#9.
+23:26:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+23:26:49 INFO  : 'fpga -state' command is executed.
+23:26:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:26:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+23:26:50 INFO  : 'jtag frequency' command is executed.
+23:26:50 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+23:26:50 INFO  : Context for 'APU' is selected.
+23:26:50 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+23:26:50 INFO  : 'configparams force-mem-access 1' command is executed.
+23:26:50 INFO  : Context for 'APU' is selected.
+23:26:50 INFO  : 'stop' command is executed.
+23:26:51 INFO  : 'ps7_init' command is executed.
+23:26:51 INFO  : 'ps7_post_config' command is executed.
+23:26:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:26:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:26:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:26:51 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:26:51 INFO  : 'configparams force-mem-access 0' command is executed.
+23:26:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:26:51 INFO  : Memory regions updated for context APU
+23:26:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:26:51 INFO  : 'con' command is executed.
+23:26:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+23:26:51 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+20:28:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:28:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+20:28:19 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:28:26 INFO  : Disconnected from the channel tcfchan#10.
+20:28:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+20:28:27 INFO  : 'fpga -state' command is executed.
+20:28:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:28:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+20:28:28 INFO  : 'jtag frequency' command is executed.
+20:28:28 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:28:28 INFO  : Context for 'APU' is selected.
+20:28:28 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:28:28 INFO  : 'configparams force-mem-access 1' command is executed.
+20:28:28 INFO  : Context for 'APU' is selected.
+20:28:28 INFO  : 'stop' command is executed.
+20:28:28 INFO  : 'ps7_init' command is executed.
+20:28:28 INFO  : 'ps7_post_config' command is executed.
+20:28:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:28:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:28:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:28:29 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:28:29 INFO  : 'configparams force-mem-access 0' command is executed.
+20:28:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:28:29 INFO  : Memory regions updated for context APU
+20:28:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:28:29 INFO  : 'con' command is executed.
+20:28:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+20:28:29 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+20:30:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:30:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+20:30:51 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:30:57 INFO  : Disconnected from the channel tcfchan#11.
+20:30:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+20:30:58 INFO  : 'fpga -state' command is executed.
+20:30:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:30:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+20:30:58 INFO  : 'jtag frequency' command is executed.
+20:30:58 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:30:58 INFO  : Context for 'APU' is selected.
+20:30:58 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:30:59 INFO  : 'configparams force-mem-access 1' command is executed.
+20:30:59 INFO  : Context for 'APU' is selected.
+20:30:59 INFO  : 'stop' command is executed.
+20:30:59 INFO  : 'ps7_init' command is executed.
+20:30:59 INFO  : 'ps7_post_config' command is executed.
+20:30:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:30:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:30:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:30:59 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:30:59 INFO  : 'configparams force-mem-access 0' command is executed.
+20:30:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:30:59 INFO  : Memory regions updated for context APU
+20:31:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:31:00 INFO  : 'con' command is executed.
+20:31:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+20:31:00 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+20:59:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:59:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+20:59:18 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:59:24 INFO  : Disconnected from the channel tcfchan#12.
+20:59:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+20:59:25 INFO  : 'fpga -state' command is executed.
+20:59:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:59:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+20:59:26 INFO  : 'jtag frequency' command is executed.
+20:59:26 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:59:26 INFO  : Context for 'APU' is selected.
+20:59:26 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:59:26 INFO  : 'configparams force-mem-access 1' command is executed.
+20:59:26 INFO  : Context for 'APU' is selected.
+20:59:26 INFO  : 'stop' command is executed.
+20:59:26 INFO  : 'ps7_init' command is executed.
+20:59:26 INFO  : 'ps7_post_config' command is executed.
+20:59:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:59:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:59:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:59:27 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:59:27 INFO  : 'configparams force-mem-access 0' command is executed.
+20:59:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:59:27 INFO  : Memory regions updated for context APU
+20:59:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:59:27 INFO  : 'con' command is executed.
+20:59:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+20:59:27 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:01:26 INFO  : Disconnected from the channel tcfchan#13.
+21:01:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:01:27 INFO  : 'fpga -state' command is executed.
+21:01:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:01:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:01:27 INFO  : 'jtag frequency' command is executed.
+21:01:27 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:01:27 INFO  : Context for 'APU' is selected.
+21:01:27 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:01:27 INFO  : 'configparams force-mem-access 1' command is executed.
+21:01:27 INFO  : Context for 'APU' is selected.
+21:01:27 INFO  : 'stop' command is executed.
+21:01:28 INFO  : 'ps7_init' command is executed.
+21:01:28 INFO  : 'ps7_post_config' command is executed.
+21:01:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:01:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:01:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:01:28 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:01:28 INFO  : 'configparams force-mem-access 0' command is executed.
+21:01:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:01:28 INFO  : Memory regions updated for context APU
+21:01:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:01:28 INFO  : 'con' command is executed.
+21:01:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:01:28 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:01:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:01:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:01:47 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:01:53 INFO  : Disconnected from the channel tcfchan#14.
+21:01:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:01:54 INFO  : 'fpga -state' command is executed.
+21:01:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:01:54 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:01:54 INFO  : 'jtag frequency' command is executed.
+21:01:54 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:01:54 INFO  : Context for 'APU' is selected.
+21:01:54 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:01:54 INFO  : 'configparams force-mem-access 1' command is executed.
+21:01:55 INFO  : Context for 'APU' is selected.
+21:01:55 INFO  : 'stop' command is executed.
+21:01:55 INFO  : 'ps7_init' command is executed.
+21:01:55 INFO  : 'ps7_post_config' command is executed.
+21:01:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:01:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:01:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:01:55 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:01:55 INFO  : 'configparams force-mem-access 0' command is executed.
+21:01:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:01:55 INFO  : Memory regions updated for context APU
+21:01:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:01:56 INFO  : 'con' command is executed.
+21:01:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:01:56 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:03:46 INFO  : Disconnected from the channel tcfchan#15.
+21:03:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:03:48 INFO  : 'fpga -state' command is executed.
+21:03:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:03:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:03:48 INFO  : 'jtag frequency' command is executed.
+21:03:48 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:03:48 INFO  : Context for 'APU' is selected.
+21:03:48 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:03:48 INFO  : 'configparams force-mem-access 1' command is executed.
+21:03:48 INFO  : Context for 'APU' is selected.
+21:03:48 INFO  : 'stop' command is executed.
+21:03:49 INFO  : 'ps7_init' command is executed.
+21:03:49 INFO  : 'ps7_post_config' command is executed.
+21:03:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:03:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:03:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:03:49 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:03:49 INFO  : 'configparams force-mem-access 0' command is executed.
+21:03:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:03:49 INFO  : Memory regions updated for context APU
+21:03:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:03:49 INFO  : 'con' command is executed.
+21:03:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:03:49 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:04:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:04:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:04:16 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:04:20 INFO  : Disconnected from the channel tcfchan#16.
+21:04:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:04:22 INFO  : 'fpga -state' command is executed.
+21:04:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:04:22 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:04:22 INFO  : 'jtag frequency' command is executed.
+21:04:22 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:04:22 INFO  : Context for 'APU' is selected.
+21:04:22 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:04:22 INFO  : 'configparams force-mem-access 1' command is executed.
+21:04:22 INFO  : Context for 'APU' is selected.
+21:04:22 INFO  : 'stop' command is executed.
+21:04:23 INFO  : 'ps7_init' command is executed.
+21:04:23 INFO  : 'ps7_post_config' command is executed.
+21:04:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:04:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:04:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:04:23 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:04:23 INFO  : 'configparams force-mem-access 0' command is executed.
+21:04:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:04:23 INFO  : Memory regions updated for context APU
+21:04:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:04:23 INFO  : 'con' command is executed.
+21:04:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:04:23 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:36:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:36:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:36:13 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:36:30 INFO  : Disconnected from the channel tcfchan#17.
+21:36:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:36:32 INFO  : 'fpga -state' command is executed.
+21:36:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:36:32 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:36:32 INFO  : 'jtag frequency' command is executed.
+21:36:32 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:36:32 INFO  : Context for 'APU' is selected.
+21:36:32 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:36:32 INFO  : 'configparams force-mem-access 1' command is executed.
+21:36:32 INFO  : Context for 'APU' is selected.
+21:36:32 INFO  : 'stop' command is executed.
+21:36:33 INFO  : 'ps7_init' command is executed.
+21:36:33 INFO  : 'ps7_post_config' command is executed.
+21:36:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:36:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:36:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:36:33 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:36:33 INFO  : 'configparams force-mem-access 0' command is executed.
+21:36:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:36:33 INFO  : Memory regions updated for context APU
+21:36:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:36:33 INFO  : 'con' command is executed.
+21:36:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:36:33 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+21:44:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:44:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:44:20 INFO  : FPGA configured successfully with bitstream "C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:44:25 INFO  : Disconnected from the channel tcfchan#18.
+21:44:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A" && level==0} -index 1' command is executed.
+21:44:27 INFO  : 'fpga -state' command is executed.
+21:44:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:44:27 INFO  : Jtag cable 'Digilent Zybo Z7 210351A81DE5A' is selected.
+21:44:27 INFO  : 'jtag frequency' command is executed.
+21:44:27 INFO  : Sourcing of 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:44:27 INFO  : Context for 'APU' is selected.
+21:44:27 INFO  : Hardware design information is loaded from 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:44:27 INFO  : 'configparams force-mem-access 1' command is executed.
+21:44:27 INFO  : Context for 'APU' is selected.
+21:44:27 INFO  : 'stop' command is executed.
+21:44:28 INFO  : 'ps7_init' command is executed.
+21:44:28 INFO  : 'ps7_post_config' command is executed.
+21:44:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:44:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:28 INFO  : The application 'C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:44:28 INFO  : 'configparams force-mem-access 0' command is executed.
+21:44:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+loadhw -hw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+dow C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/mastcam_mvmt/Debug/mastcam_mvmt.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:44:28 INFO  : Memory regions updated for context APU
+21:44:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:28 INFO  : 'con' command is executed.
+21:44:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A81DE5A"} -index 0
+con
+----------------End of Script----------------
+
+21:44:28 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
+23:06:33 INFO  : Disconnected from the channel tcfchan#19.
