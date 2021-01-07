@@ -32,9 +32,10 @@ typedef struct{
 	unsigned int duration;
 }Mastcam_State_Data;
 
-typedef struct{
+typedef struct Mastcam_State{
 	Mastcam_State_Data state_data;
 	struct Mastcam_State *next_state;
+	struct Mastcam_State *prev_state;
 }Mastcam_State;
 
 //Initialize uart device that will control mastcam actuators
