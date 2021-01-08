@@ -61,7 +61,7 @@ typedef enum {RUNNING, REPROGRAM} RunState;
  * 		is returned, main transitions states to begin moving
  * 		through the newly programmed states.
  **************************************************************/
-ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum);
+ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int *StateNum);
 void Program_position(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState);
 void Program_channel(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState);
 void Program_duration(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState);
@@ -101,17 +101,22 @@ int main()
 	Mastcam_State Head;
 	Mastcam_State *Tail;
 	Mastcam_State *CurState;
+	Mastcam_State *tmp; //temporary state only used for deallocation process
 	int StateNum;
 	MainHw Main_Hw;
 	SysState SystemState;
 	ProgramState ProgState;
 	RunState Run_State;
-	//RunState RState;
+	int status;
 	///////////////////////////////////////
 
-    unsigned char rec_byte;
-    int rec_cnt;
-    int status;
+	//user input variables
+    //unsigned char rec_byte;
+    //int rec_cnt;
+
+
+    //debug print flags//
+    char main_print;
 
     //System Initialization/////////////////////////////////////////
     init_platform();
@@ -126,32 +131,36 @@ int main()
         }
     mastcam_init(&(Main_Hw.int_cntrl), &Mast);
 
-    StateNum = 0;
     CurState = &Head;
     Tail = &Head;
+    StateNum = 0;
     SystemState = PROGRAM;
+    main_print = 0;
     /////////////////////////////////////////////////////////////////
 
-    //debug print flags//
-    char main_print;
+
 
     while(1){
 
     	switch(SystemState){
 			case(PROGRAM):
 				if(main_print == 0){
-					xil_printf("SystemState: PROGRAM \n\r");
+					xil_printf("\n\nSystemState: PROGRAM \n\r");
 					main_print = 1;
 				}
-				ProgState = Program(&Main_Hw, &Mast, CurState, StateNum);
+				ProgState = Program(&Main_Hw, &Mast, CurState, &StateNum);
 				switch(ProgState){
 					case(ALLOC):
 						//Allocate new Mastcam state and append to list
-						CurState = (Mastcam_State *)malloc(sizeof(Mastcam_State));
-						Tail->next_state = CurState;
-						Tail = CurState;
-						StateNum += 1;
-						ProgState = PROG_STATE;
+						if(StateNum == 0){
+							//current state is head. No need to allocate a new state yet.
+						}
+						else{
+							Tail = (Mastcam_State *)malloc(sizeof(Mastcam_State));
+							CurState->next_state = Tail;
+							CurState = Tail;
+							//wait to increment StateNum until most recent state has its data set
+						}
 					break;
 
 					case(PROG_STATE):
@@ -160,14 +169,14 @@ int main()
 
 					case(DONE):
 						SystemState = RUN;
-						main_print = 1;
+						main_print = 0;
 					break;
 				}
 			break;
 
 			case(RUN):
 				if(main_print == 0){
-					xil_printf("SystemState: RUN \n\r");
+					xil_printf("\n\nSystemState: RUN \n\r");
 					main_print = 1;
 				}
 				Run_State = Run(&Main_Hw, &Mast, &Head, StateNum);
@@ -178,53 +187,34 @@ int main()
 
 					case(REPROGRAM):
 						SystemState = PROGRAM;
-						main_print = 1;
+						main_print = 0;
+						//deallocate all states besides head
+						CurState = Head.next_state;
+						if(StateNum == 2){
+							CurState->next_state = NULL;
+							free(CurState);
+							Head.next_state = NULL;
+						}
+						else if(StateNum != 1){
+							while(CurState != Tail){
+								tmp = CurState->next_state;
+								CurState->next_state = NULL;
+								free(CurState);
+								CurState = tmp;
+								tmp = CurState->next_state;
+							}
+							Tail->next_state = NULL;
+							free(Tail);
+							Head.next_state = NULL;
+						}
+
+						StateNum = 0;
 					break;
 				}
 			break;
     	}
 
-    	//Program/////////////////////////////////////////////////////////////////////
-    	/*
-    	timer_pend(1);
 
-    	rec_cnt = XUartPs_Recv(&(Main_Hw.ps_uart), &rec_byte, 16);
-
-    	if(rec_cnt != 0){
-
-    		if(rec_byte != '\r'){
-        		switch(rec_byte){
-    				case(a):
-    					if(!(Mast.move_state & LEFT))
-    						mastcam_move(&Mast,LEFT);
-    				break;
-
-    				case(d):
-    					if(!(Mast.move_state & RIGHT))
-    						mastcam_move(&Mast,RIGHT);
-    				break;
-
-    				case(s):
-    					if(!(Mast.move_state & DOWN))
-    						mastcam_move(&Mast,DOWN);
-    				break;
-
-    				case(w):
-    					if(!(Mast.move_state & UP))
-    						mastcam_move(&Mast,UP);
-    				break;
-        		}
-    		}
-    		else{
-    			mastcam_getpos(&Mast);
-    		}
-
-    	}
-    	else if(Mast.move_state != STOP){
-    		mastcam_move(&Mast,STOP);
-    	}
-		*/
-    	////////////////////////////////////////////////////////////////////////////
 
     	//Run////////////////////////////////////////////////////////////////////////
 
@@ -239,28 +229,40 @@ int main()
 
 
 //Program movement state machine
-ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum){
+ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int *StateNum){
 
-	int rec_cnt;
+	int rec_cnt = 0;
 	unsigned char rec_byte;
 
-	char prog_flag;
+	static char prog_flag = 0;
 
-	static ProgramState prog_state = DONE;
+	static ProgramState prog_state = ALLOC;
+	static ProgramState prog_state_next = ALLOC;
 
-	prog_flag = 0;
-	switch(prog_state){
+
+	switch(prog_state_next){
 
 		case(ALLOC):
-			//do nothing here. Main should handle allocation of state list
+			//next state is always PROG_STATE from ALLOC
+			prog_state = ALLOC;
+			prog_state_next = PROG_STATE;
+			prog_flag = 1;
 		break;
 
 		case(PROG_STATE):
-			if(StateNum == 1){
-				prog_flag = 1;
+			prog_state = PROG_STATE;
+
+			if(prog_flag == 1){
+						*StateNum += 1;
+						xil_printf("\n State number: %i \n\r Program sequence beginning... \n\r", *StateNum);
+						Program_position(Main_Hw, Mast, CurState);
+						//Program_channel(Main_Hw, Mast, CurState);
+						//Program_duration(Main_Hw, Mast, CurState);
+						prog_flag = 0;
 			}
+
 			else{
-				xil_printf("Program another state? (y) for yes, (n) to begin sequencing between states. \n\r");
+				xil_printf("\n Program another state? (y) for yes, (n) to begin sequencing between states. \n\r");
 				//wait for user to input data
 				while(rec_cnt == 0){
 					timer_pend(1);
@@ -269,37 +271,29 @@ ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, in
 
 				switch(rec_byte){
 					case(y):
-						prog_flag = 1;
+						prog_state_next = ALLOC;
 					break;
 
 					case(n):
 						prog_flag = 0;
-						prog_state = DONE;
+						prog_state_next = DONE;
 					break;
 
 					default:
 						//user did not enter meaningful data so remain in this state.
-						prog_state = PROG_STATE;
+						prog_state_next = PROG_STATE;
 					break;
 				}
-
-				if(prog_flag == 1){
-					xil_printf("Program sequence beginning... \n\r");
-					Program_position(Main_Hw, Mast, CurState);
-					//Program_channel(Main_Hw, Mast, CurState);
-					//Program_duration(Main_Hw, Mast, CurState);
-				}
 			}
+
+
+
 		break;
 
 		case(DONE):
-			if(StateNum == 1){
-				prog_state = PROG_STATE;
-			}
-			else{
-				prog_state = DONE;
-				xil_printf("programming sequence complete! \n\r");
-			}
+			prog_state = DONE;
+			prog_state_next = ALLOC;
+			xil_printf("programming sequence complete! \n\r");
 		break;
 	}
 
@@ -307,6 +301,49 @@ ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, in
 }
 
 void Program_position(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *Curstate){
+
+	//Program/////////////////////////////////////////////////////////////////////
+	/*
+	timer_pend(1);
+
+	rec_cnt = XUartPs_Recv(&(Main_Hw.ps_uart), &rec_byte, 16);
+
+	if(rec_cnt != 0){
+
+		if(rec_byte != '\r'){
+			switch(rec_byte){
+				case(a):
+					if(!(Mast.move_state & LEFT))
+						mastcam_move(&Mast,LEFT);
+				break;
+
+				case(d):
+					if(!(Mast.move_state & RIGHT))
+						mastcam_move(&Mast,RIGHT);
+				break;
+
+				case(s):
+					if(!(Mast.move_state & DOWN))
+						mastcam_move(&Mast,DOWN);
+				break;
+
+				case(w):
+					if(!(Mast.move_state & UP))
+						mastcam_move(&Mast,UP);
+				break;
+			}
+		}
+		else{
+			mastcam_getpos(&Mast);
+		}
+
+	}
+	else if(Mast.move_state != STOP){
+		mastcam_move(&Mast,STOP);
+	}
+	*/
+	////////////////////////////////////////////////////////////////////////////
+
 	xil_printf("program position! \n\r");
 }
 
@@ -314,9 +351,46 @@ void Program_position(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *Curstate){
 
 RunState Run(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum){
 
-	RunState run_state;
+	static RunState run_state;
+	static RunState run_state_next;
 
-	xil_printf("running! \n\r");
+	static char print_flag;
+	unsigned char rec_byte;
+
+	int rec_cnt = 0;
+
+	switch(run_state_next){
+		case(RUNNING):
+			run_state = RUNNING;
+			if(print_flag == 0){
+				xil_printf("Sequence Running! Press (r) to set a new sequence \n\r");
+				print_flag = 1;
+			}
+			//get user input
+			while(rec_cnt == 0){
+				timer_pend(1);
+				rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
+			}
+
+			switch(rec_byte){
+				case(r):
+					run_state_next = REPROGRAM;
+				break;
+
+				default:
+					run_state_next = RUNNING;
+				break;
+			}
+		break;
+
+		case(REPROGRAM):
+			run_state = REPROGRAM;
+			run_state_next = RUNNING;
+			print_flag = 0;
+		break;
+	}
+
+	return run_state;
 }
 
 

@@ -189,27 +189,25 @@ int main()
 						SystemState = PROGRAM;
 						main_print = 0;
 						//deallocate all states besides head
-
-						if(StateNum != 1){
-							CurState = Head.next_state;
-							if(StateNum == 2){
+						CurState = Head.next_state;
+						if(StateNum == 2){
+							CurState->next_state = NULL;
+							free(CurState);
+							Head.next_state = NULL;
+						}
+						else{
+							while(CurState != Tail){
+								tmp = CurState->next_state;
 								CurState->next_state = NULL;
 								free(CurState);
-								Head.next_state = NULL;
+								CurState = tmp;
+								tmp = CurState->next_state;
 							}
-							else{
-								while(CurState != Tail){
-									tmp = CurState->next_state;
-									CurState->next_state = NULL;
-									free(CurState);
-									CurState = tmp;
-								}
-								Tail->next_state = NULL;
-								free(Tail);
-								Head.next_state = NULL;
-							}
+							Tail->next_state = NULL;
+							free(Tail);
+							Head.next_state = NULL;
 						}
-						CurState = &Head;
+
 						StateNum = 0;
 					break;
 				}

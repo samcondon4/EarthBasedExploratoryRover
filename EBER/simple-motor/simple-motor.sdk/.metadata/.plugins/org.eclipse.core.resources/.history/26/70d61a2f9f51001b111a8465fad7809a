@@ -189,27 +189,25 @@ int main()
 						SystemState = PROGRAM;
 						main_print = 0;
 						//deallocate all states besides head
-
-						if(StateNum != 1){
-							CurState = Head.next_state;
-							if(StateNum == 2){
+						CurState = Head.next_state;
+						if(StateNum == 2){
+							CurState->next_state = NULL;
+							free(CurState);
+							Head.next_state = NULL;
+						}
+						else{
+							while(CurState != Tail){
+								tmp = CurState->next_state;
 								CurState->next_state = NULL;
 								free(CurState);
-								Head.next_state = NULL;
+								CurState = tmp;
+								tmp = CurState->next_state;
 							}
-							else{
-								while(CurState != Tail){
-									tmp = CurState->next_state;
-									CurState->next_state = NULL;
-									free(CurState);
-									CurState = tmp;
-								}
-								Tail->next_state = NULL;
-								free(Tail);
-								Head.next_state = NULL;
-							}
+							Tail->next_state = NULL;
+							free(Tail);
+							Head.next_state = NULL;
 						}
-						CurState = &Head;
+
 						StateNum = 0;
 					break;
 				}
@@ -236,33 +234,25 @@ ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, in
 	int rec_cnt = 0;
 	unsigned char rec_byte;
 
-	static char prog_flag = 0;
+	char prog_flag;
 
 	static ProgramState prog_state = ALLOC;
 	static ProgramState prog_state_next = ALLOC;
 
-
+	prog_flag = 0;
 	switch(prog_state_next){
 
 		case(ALLOC):
 			//next state is always PROG_STATE from ALLOC
 			prog_state = ALLOC;
 			prog_state_next = PROG_STATE;
-			prog_flag = 1;
 		break;
 
 		case(PROG_STATE):
 			prog_state = PROG_STATE;
-
-			if(prog_flag == 1){
-						*StateNum += 1;
-						xil_printf("\n State number: %i \n\r Program sequence beginning... \n\r", *StateNum);
-						Program_position(Main_Hw, Mast, CurState);
-						//Program_channel(Main_Hw, Mast, CurState);
-						//Program_duration(Main_Hw, Mast, CurState);
-						prog_flag = 0;
+			if(*StateNum == 0){
+				prog_flag = 1;
 			}
-
 			else{
 				xil_printf("\n Program another state? (y) for yes, (n) to begin sequencing between states. \n\r");
 				//wait for user to input data
@@ -273,7 +263,7 @@ ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, in
 
 				switch(rec_byte){
 					case(y):
-						prog_state_next = ALLOC;
+						prog_flag = 1;
 					break;
 
 					case(n):
@@ -288,7 +278,13 @@ ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, in
 				}
 			}
 
-
+			if(prog_flag == 1){
+				*StateNum += 1;
+				xil_printf("\n State number: %i \n\r Program sequence beginning... \n\r", *StateNum);
+				Program_position(Main_Hw, Mast, CurState);
+				//Program_channel(Main_Hw, Mast, CurState);
+				//Program_duration(Main_Hw, Mast, CurState);
+			}
 
 		break;
 

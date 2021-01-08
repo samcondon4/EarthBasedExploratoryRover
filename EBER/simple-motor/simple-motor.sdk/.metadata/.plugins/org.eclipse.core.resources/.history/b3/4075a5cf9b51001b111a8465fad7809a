@@ -15,6 +15,7 @@
 #include "xtmrctr.h"
 #include "xscugic.h"
 #include "xil_exception.h"
+#include "stdlib.h"
 #include "MastcamSupport.h"
 
 //Defines for AXI Timer parameters
@@ -44,7 +45,35 @@ typedef struct{
 //State machine state definitions
 typedef enum {PROGRAM, RUN} SysState;
 typedef enum {ALLOC, PROG_STATE, DONE} ProgramState;
-//typedef enum {} RunState;
+typedef enum {RUNNING, REPROGRAM} RunState;
+
+
+//System States//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**************************************************************
+ * Program:
+ * 		This state create the list of mastcam programmed states.
+ *
+ * return:
+ * 		returns a ProgramState enumerator that tells main how
+ * 		to respond. Either ALLOC or DONE should be returned.
+ * 		When ALLOC is returned, main allocates a new mastcam
+ * 		state and adds it to the list of states. When DONE
+ * 		is returned, main transitions states to begin moving
+ * 		through the newly programmed states.
+ **************************************************************/
+ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int *StateNum);
+void Program_position(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState);
+void Program_channel(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState);
+void Program_duration(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState);
+
+/*****************************************************************
+ * Run:
+ * 		This state runs through the sequence of mastcam states
+ * 		that were programmed by Program.
+ *
+ ******************************************************************/
+RunState Run(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum);
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //function prototypes/////////////////////////////////////////////////
 int MainHwInit(MainHw* main_hw);
@@ -59,10 +88,7 @@ void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber);
 void timer_pend(int pend_count);
 //////////////////////////////////////////////////////////////////////
 
-//System States///////////////////////////////////////////////////////
-ProgramState Program(SysState *SystemState, MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum);
-void Run(SysState *SystemState, MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum);
-//////////////////////////////////////////////////////////////////////
+
 
 //Global flag for timer counter
 volatile int TimerExpired;
@@ -75,16 +101,22 @@ int main()
 	Mastcam_State Head;
 	Mastcam_State *Tail;
 	Mastcam_State *CurState;
+	Mastcam_State *tmp; //temporary state only used for deallocation process
 	int StateNum;
 	MainHw Main_Hw;
 	SysState SystemState;
 	ProgramState ProgState;
-	//RunState RState;
+	RunState Run_State;
+	int status;
 	///////////////////////////////////////
 
-    unsigned char rec_byte;
-    int rec_cnt;
-    int status;
+	//user input variables
+    //unsigned char rec_byte;
+    //int rec_cnt;
+
+
+    //debug print flags//
+    char main_print;
 
     //System Initialization/////////////////////////////////////////
     init_platform();
@@ -99,18 +131,36 @@ int main()
         }
     mastcam_init(&(Main_Hw.int_cntrl), &Mast);
 
-    StateNum = 0;
     CurState = &Head;
+    Tail = &Head;
+    StateNum = 0;
+    SystemState = PROGRAM;
+    main_print = 0;
     /////////////////////////////////////////////////////////////////
+
+
 
     while(1){
 
     	switch(SystemState){
 			case(PROGRAM):
-				ProgState = Program(&SystemState,&Main_Hw, &Mast,CurState,StateNum);
+				if(main_print == 0){
+					xil_printf("\n\nSystemState: PROGRAM \n\r");
+					main_print = 1;
+				}
+				ProgState = Program(&Main_Hw, &Mast, CurState, &StateNum);
 				switch(ProgState){
 					case(ALLOC):
 						//Allocate new Mastcam state and append to list
+						if(StateNum == 0){
+							//current state is head. No need to allocate a new state yet.
+						}
+						else{
+							Tail = (Mastcam_State *)malloc(sizeof(Mastcam_State));
+							CurState->next_state = Tail;
+							CurState = Tail;
+							//wait to increment StateNum until most recent state has its data set
+						}
 					break;
 
 					case(PROG_STATE):
@@ -119,12 +169,45 @@ int main()
 
 					case(DONE):
 						SystemState = RUN;
+						main_print = 0;
 					break;
 				}
 			break;
 
 			case(RUN):
+				if(main_print == 0){
+					xil_printf("\n\nSystemState: RUN \n\r");
+					main_print = 1;
+				}
+				Run_State = Run(&Main_Hw, &Mast, &Head, StateNum);
+				switch(Run_State){
+					case(RUNNING):
+						//do nothing, system is just running
+					break;
 
+					case(REPROGRAM):
+						SystemState = PROGRAM;
+						main_print = 0;
+						//deallocate all states besides head
+						CurState = Head.next_state;
+						tmp = CurState->next_state;
+						if(StateNum == 2){
+							CurState->next_state = NULL;
+							free(CurState);
+							Head.next_state = NULL;
+						}
+						else{
+							while(CurState != Tail){
+								CurState->next_state = NULL;
+								free(CurState);
+								CurState = tmp;
+								tmp = CurState->next_state;
+							}
+						}
+
+						StateNum = 0;
+					break;
+				}
 			break;
     	}
 
@@ -183,13 +266,126 @@ int main()
 
 
 //Program movement state machine
-ProgramState Program(SysState *SystemState, MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum){
+ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int *StateNum){
 
-	ProgramState prog_state;
-	//do the stuff
+	int rec_cnt = 0;
+	unsigned char rec_byte;
+
+	char prog_flag;
+
+	static ProgramState prog_state = ALLOC;
+	static ProgramState prog_state_next = ALLOC;
+
+	prog_flag = 0;
+	switch(prog_state_next){
+
+		case(ALLOC):
+			//next state is always PROG_STATE from ALLOC
+			prog_state = ALLOC;
+			prog_state_next = PROG_STATE;
+		break;
+
+		case(PROG_STATE):
+			prog_state = PROG_STATE;
+			if(*StateNum == 0){
+				prog_flag = 1;
+			}
+			else{
+				xil_printf("\n Program another state? (y) for yes, (n) to begin sequencing between states. \n\r");
+				//wait for user to input data
+				while(rec_cnt == 0){
+					timer_pend(1);
+					rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
+				}
+
+				switch(rec_byte){
+					case(y):
+						prog_flag = 1;
+					break;
+
+					case(n):
+						prog_flag = 0;
+						prog_state_next = DONE;
+					break;
+
+					default:
+						//user did not enter meaningful data so remain in this state.
+						prog_state_next = PROG_STATE;
+					break;
+				}
+			}
+
+			if(prog_flag == 1){
+				*StateNum += 1;
+				xil_printf("\n State number: %i \n\r Program sequence beginning... \n\r", *StateNum);
+				Program_position(Main_Hw, Mast, CurState);
+				//Program_channel(Main_Hw, Mast, CurState);
+				//Program_duration(Main_Hw, Mast, CurState);
+			}
+
+		break;
+
+		case(DONE):
+			prog_state = DONE;
+			prog_state_next = ALLOC;
+			xil_printf("programming sequence complete! \n\r");
+		break;
+	}
 
 	return prog_state;
 }
+
+void Program_position(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *Curstate){
+	xil_printf("program position! \n\r");
+}
+
+
+
+RunState Run(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum){
+
+	static RunState run_state;
+	static RunState run_state_next;
+
+	static char print_flag;
+	unsigned char rec_byte;
+
+	int rec_cnt = 0;
+
+	switch(run_state_next){
+		case(RUNNING):
+			run_state = RUNNING;
+			if(print_flag == 0){
+				xil_printf("Sequence Running! Press (r) to set a new sequence \n\r");
+				print_flag = 1;
+			}
+			//get user input
+			while(rec_cnt == 0){
+				timer_pend(1);
+				rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
+			}
+
+			switch(rec_byte){
+				case(r):
+					run_state_next = REPROGRAM;
+				break;
+
+				default:
+					run_state_next = RUNNING;
+				break;
+			}
+		break;
+
+		case(REPROGRAM):
+			run_state = REPROGRAM;
+			run_state_next = RUNNING;
+			print_flag = 0;
+		break;
+	}
+
+	return run_state;
+}
+
+
 
 
 int MainHwInit(MainHw *main_hw){

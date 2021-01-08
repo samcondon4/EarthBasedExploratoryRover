@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Memory/>
+<Memory>
+<Block Addr="Head" Context="JTAG-jsn-Zybo Z7-210351A81DE5A-4ba00477-0.0" Size="-1"/>
+<Block Addr="Tail" Context="JTAG-jsn-Zybo Z7-210351A81DE5A-4ba00477-0.0" Size="-1"/>
+<Block Addr="CurState" Context="JTAG-jsn-Zybo Z7-210351A81DE5A-4ba00477-0.0" Size="-1"/>
+</Memory>
