@@ -29,3 +29,5 @@
 1609795268080	Delete resource 'mastcam_cntrl'
 1609795275560	Delete resource 'mastcam_cntrl_bsp'
 1609795282039	Delete resource 'design_1_wrapper_hw_platform_0'
+1610167951331	Delete resource 'mastcam_mvmt_bsp_xtmrctr_intr_example_1'
+1610167955819	Delete resource 'mastcam_mvmt_bsp_xuartlite_intr_example_1'

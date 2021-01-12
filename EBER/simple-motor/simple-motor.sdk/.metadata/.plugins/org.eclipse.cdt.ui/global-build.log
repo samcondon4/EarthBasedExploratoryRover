@@ -1,8 +1,8 @@
-19:27:01 **** Clean-only build of configuration Debug for project mastcam_mvmt ****
+17:42:56 **** Clean-only build of configuration Debug for project mastcam_mvmt ****
 make clean 
 rm -rf  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o  ./src/MastcamControl.d ./src/MastcamSupport.d ./src/platform.d  mastcam_mvmt.elf.size  mastcam_mvmt.elf
 ' '
-19:27:01 **** Clean-only build of project mastcam_mvmt_bsp ****
+17:42:57 **** Clean-only build of project mastcam_mvmt_bsp ****
 make -k clean 
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
 make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s clean 
@@ -23,7 +23,7 @@ make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s clean
 make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s clean 
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
 rm -f ps7_cortexa9_0/lib/libxil.a
-19:27:03 **** Build of project mastcam_mvmt_bsp ****
+17:42:59 **** Build of project mastcam_mvmt_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
@@ -117,7 +117,7 @@ make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 "Compiling xadcps"
 'Finished building libraries'
-19:27:31 **** Build of configuration Debug for project mastcam_mvmt ****
+17:43:26 **** Build of configuration Debug for project mastcam_mvmt ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -129,17 +129,6 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" 
 'Building file: ../src/MastcamSupport.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamSupport.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamSupport.d" -MT"src/MastcamSupport.o" -o "src/MastcamSupport.o" "../src/MastcamSupport.c"
-../src/MastcamSupport.c: In function 'mastcam_getpos':
-../src/MastcamSupport.c:132:6: warning: unused variable 'zenith_pos' [-Wunused-variable]
-  int zenith_pos;
-      ^~~~~~~~~~
-../src/MastcamSupport.c:131:6: warning: unused variable 'azimuth_pos' [-Wunused-variable]
-  int azimuth_pos;
-      ^~~~~~~~~~~
-At top level:
-../src/MastcamSupport.c:48:22: warning: 'tilt_read_pos_buf' defined but not used [-Wunused-variable]
- static unsigned char tilt_read_pos_buf[READ_POS_BUF_SIZE_TX] = {LX16A_HEADER, LX16A_HEADER, TILT_MOTOR_ID, 0x03, SERVO_POS_READ, 0xde};
-                      ^~~~~~~~~~~~~~~~~
 'Finished building: ../src/MastcamSupport.c'
 ' '
 'Building file: ../src/platform.c'
@@ -155,10 +144,20 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39632	   3900	  22664	  66196	  10294	mastcam_mvmt.elf
+  41588	   3924	  22664	  68176	  10a50	mastcam_mvmt.elf
 'Finished building: mastcam_mvmt.elf.size'
 ' '
-19:27:51 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+17:43:51 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:48:43 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:56:51 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -167,20 +166,135 @@ a9-linaro-pre-build-step
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
 'Finished building: ../src/MastcamControl.c'
 ' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41524	   3924	  22664	  68112	  10a10	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+18:06:10 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:11:01 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:16:12 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+../src/MastcamControl.c: In function 'Program':
+../src/MastcamControl.c:289:17: error: incompatible type for argument 1 of 'timer_pend'
+      timer_pend(100);
+                 ^~~
+../src/MastcamControl.c:89:6: note: expected 'MainHw {aka struct <anonymous>}' but argument is of type 'int'
+ void timer_pend(MainHw main_hw, int pend_count);
+      ^~~~~~~~~~
+../src/MastcamControl.c:289:6: error: too few arguments to function 'timer_pend'
+      timer_pend(100);
+      ^~~~~~~~~~
+../src/MastcamControl.c:89:6: note: declared here
+ void timer_pend(MainHw main_hw, int pend_count);
+      ^~~~~~~~~~
+../src/MastcamControl.c: In function 'Program_position':
+../src/MastcamControl.c:335:14: error: incompatible type for argument 1 of 'timer_pend'
+   timer_pend(100);
+              ^~~
+../src/MastcamControl.c:89:6: note: expected 'MainHw {aka struct <anonymous>}' but argument is of type 'int'
+ void timer_pend(MainHw main_hw, int pend_count);
+      ^~~~~~~~~~
+../src/MastcamControl.c:335:3: error: too few arguments to function 'timer_pend'
+   timer_pend(100);
+   ^~~~~~~~~~
+../src/MastcamControl.c:89:6: note: declared here
+ void timer_pend(MainHw main_hw, int pend_count);
+      ^~~~~~~~~~
+../src/MastcamControl.c: In function 'Run':
+../src/MastcamControl.c:437:16: error: incompatible type for argument 1 of 'timer_pend'
+     timer_pend(5000);
+                ^~~~
+../src/MastcamControl.c:89:6: note: expected 'MainHw {aka struct <anonymous>}' but argument is of type 'int'
+ void timer_pend(MainHw main_hw, int pend_count);
+      ^~~~~~~~~~
+../src/MastcamControl.c:437:5: error: too few arguments to function 'timer_pend'
+     timer_pend(5000);
+     ^~~~~~~~~~
+../src/MastcamControl.c:89:6: note: declared here
+ void timer_pend(MainHw main_hw, int pend_count);
+      ^~~~~~~~~~
+../src/MastcamControl.c:449:16: error: incompatible type for argument 1 of 'timer_pend'
+     timer_pend(1);
+                ^
+../src/MastcamControl.c:89:6: note: expected 'MainHw {aka struct <anonymous>}' but argument is of type 'int'
+ void timer_pend(MainHw main_hw, int pend_count);
+      ^~~~~~~~~~
+../src/MastcamControl.c:449:5: error: too few arguments to function 'timer_pend'
+     timer_pend(1);
+     ^~~~~~~~~~
+../src/MastcamControl.c:89:6: note: declared here
+ void timer_pend(MainHw main_hw, int pend_count);
+      ^~~~~~~~~~
+../src/MastcamControl.c: At top level:
+../src/MastcamControl.c:588:6: error: conflicting types for 'timer_pend'
+ void timer_pend(MainHw *main_hw, int pend_count){
+      ^~~~~~~~~~
+../src/MastcamControl.c:89:6: note: previous declaration of 'timer_pend' was here
+ void timer_pend(MainHw main_hw, int pend_count);
+      ^~~~~~~~~~
+make: *** [src/MastcamControl.o] Error 1
+18:17:25 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+'Finished building: ../src/MastcamControl.c'
+' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41588	   3924	  22664	  68176	  10a50	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+18:17:41 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:21:40 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:21:56 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:28:21 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
 'Building file: ../src/MastcamSupport.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamSupport.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamSupport.d" -MT"src/MastcamSupport.o" -o "src/MastcamSupport.o" "../src/MastcamSupport.c"
-../src/MastcamSupport.c: In function 'mastcam_getpos':
-../src/MastcamSupport.c:132:6: warning: unused variable 'zenith_pos' [-Wunused-variable]
-  int zenith_pos;
-      ^~~~~~~~~~
-../src/MastcamSupport.c:131:6: warning: unused variable 'azimuth_pos' [-Wunused-variable]
-  int azimuth_pos;
-      ^~~~~~~~~~~
-At top level:
-../src/MastcamSupport.c:48:22: warning: 'tilt_read_pos_buf' defined but not used [-Wunused-variable]
- static unsigned char tilt_read_pos_buf[READ_POS_BUF_SIZE_TX] = {LX16A_HEADER, LX16A_HEADER, TILT_MOTOR_ID, 0x03, SERVO_POS_READ, 0xde};
-                      ^~~~~~~~~~~~~~~~~
 'Finished building: ../src/MastcamSupport.c'
 ' '
 'Building target: mastcam_mvmt.elf'
@@ -191,6 +305,221 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39632	   3900	  22664	  66196	  10294	mastcam_mvmt.elf
+  41524	   3924	  22664	  68112	  10a10	mastcam_mvmt.elf
 'Finished building: mastcam_mvmt.elf.size'
 ' '
+18:28:25 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:32:30 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+'Finished building: ../src/MastcamControl.c'
+' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41524	   3924	  22664	  68112	  10a10	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+18:32:54 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+'Finished building: ../src/MastcamControl.c'
+' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41524	   3924	  22664	  68112	  10a10	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+18:33:09 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:36:53 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+'Finished building: ../src/MastcamControl.c'
+' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41524	   3924	  22664	  68112	  10a10	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+18:36:59 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:37:12 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:39:15 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+'Finished building: ../src/MastcamControl.c'
+' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41524	   3924	  22664	  68112	  10a10	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+18:39:25 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:44:01 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:45:36 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+'Finished building: ../src/MastcamControl.c'
+' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41524	   3924	  22664	  68112	  10a10	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+18:45:53 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:48:05 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+'Finished building: ../src/MastcamControl.c'
+' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41524	   3924	  22664	  68112	  10a10	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+18:48:12 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:48:45 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:54:15 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+'Finished building: ../src/MastcamControl.c'
+' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41524	   3924	  22664	  68112	  10a10	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+18:54:27 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+18:55:42 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+'Finished building: ../src/MastcamControl.c'
+' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41524	   3924	  22664	  68112	  10a10	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+18:55:52 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

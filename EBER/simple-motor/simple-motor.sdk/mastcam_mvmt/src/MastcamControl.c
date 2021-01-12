@@ -22,18 +22,19 @@
 #define TMRCTR_DEVICE_ID		XPAR_TMRCTR_0_DEVICE_ID
 #define TMRCTR_INTERRUPT_ID		XPAR_FABRIC_TMRCTR_0_VEC_ID
 #define INTC_DEVICE_ID			XPAR_SCUGIC_SINGLE_DEVICE_ID
-#define TIMER_CNTR_0				0
+#define TIMER_CNTR_0			0
 
-#define RESET_VALUE	 0xFFcf0000
+#define RESET_VALUE	 0xffff0000
 
 //Ascii values of keys
-#define a 0x61 //left
-#define d 0x64 //right
-#define s 0x73 //down
-#define w 0x77 //up
-#define r 0x72 //reprogram
-#define y 0x79 //yes
-#define n 0x6e
+#define a 		0x61 //left
+#define d 		0x64 //right
+#define s 		0x73 //down
+#define w 		0x77 //up
+#define r 		0x72 //reprogram
+#define y 		0x79 //yes
+#define n 	  	0x6e //no
+#define enter	0x0d //carriage return
 
 //Contains structures for all hw devices controlled by main
 typedef struct{
@@ -85,7 +86,7 @@ int TmrCtrSetupIntrSystem(XScuGic* IntcInstancePtr,
 				u8 TmrCtrNumber);
 
 void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber);
-void timer_pend(int pend_count);
+void timer_pend(MainHw *main_hw, int pend_count);
 //////////////////////////////////////////////////////////////////////
 
 
@@ -108,6 +109,7 @@ int main()
 	ProgramState ProgState;
 	RunState Run_State;
 	int status;
+	int i; //iterator
 	///////////////////////////////////////
 
 	//user input variables
@@ -117,6 +119,7 @@ int main()
 
     //debug print flags//
     char main_print;
+    char run_print;
 
     //System Initialization/////////////////////////////////////////
     init_platform();
@@ -136,6 +139,7 @@ int main()
     StateNum = 0;
     SystemState = PROGRAM;
     main_print = 0;
+    run_print = 0;
     /////////////////////////////////////////////////////////////////
 
 
@@ -169,6 +173,8 @@ int main()
 
 					case(DONE):
 						SystemState = RUN;
+						Tail->next_state = &Head;
+						CurState = &Head;
 						main_print = 0;
 					break;
 				}
@@ -183,6 +189,19 @@ int main()
 				switch(Run_State){
 					case(RUNNING):
 						//do nothing, system is just running
+						if(run_print == 0){
+							i = 1;
+							while(CurState != Tail){
+								xil_printf("\n\r State %i azimuth pos: %04x", i, CurState->state_data.azimuth_pos);
+								xil_printf("\n\r State %i zenith pos: %04x", i, CurState->state_data.zenith_pos);
+								CurState = CurState->next_state;
+								i += 1;
+							}
+							//print tail data
+							xil_printf("\n\r State %i azimuth pos: %04x", i, CurState->state_data.azimuth_pos);
+							xil_printf("\n\r State %i zenith pos: %04x", i, CurState->state_data.zenith_pos);
+							CurState = CurState->next_state;
+						}
 					break;
 
 					case(REPROGRAM):
@@ -256,7 +275,7 @@ ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, in
 
 			if(prog_flag == 1){
 						*StateNum += 1;
-						xil_printf("\n State number: %i \n\r Program sequence beginning... \n\r", *StateNum);
+						xil_printf("\n State number: %i programming sequence beginning... \n\r", *StateNum);
 						Program_position(Main_Hw, Mast, CurState);
 						//Program_channel(Main_Hw, Mast, CurState);
 						//Program_duration(Main_Hw, Mast, CurState);
@@ -267,7 +286,7 @@ ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, in
 				xil_printf("\n Program another state? (y) for yes, (n) to begin sequencing between states. \n\r");
 				//wait for user to input data
 				while(rec_cnt == 0){
-					timer_pend(1);
+					timer_pend(Main_Hw, 50);
 					rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
 				}
 
@@ -295,7 +314,7 @@ ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, in
 		case(DONE):
 			prog_state = DONE;
 			prog_state_next = ALLOC;
-			xil_printf("programming sequence complete! \n\r");
+			xil_printf("State number %i programming sequence complete! \n\r",*StateNum);
 		break;
 	}
 
@@ -304,52 +323,97 @@ ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, in
 
 void Program_position(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *Curstate){
 
+	int rec_cnt;
+	unsigned char rec_byte;
+
+	char brk_flag = 0;
+
+	xil_printf("(w) to tilt up, (s) to tilt down, (a) to pan counter-clockwise, (d) to pan clockwise, (enter) to set the state position \n\r");
+
 	//Program/////////////////////////////////////////////////////////////////////
-	/*
-	timer_pend(1);
+	while(brk_flag == 0){
+		timer_pend(Main_Hw, 100);
+		rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
 
-	rec_cnt = XUartPs_Recv(&(Main_Hw.ps_uart), &rec_byte, 16);
+		if(rec_cnt != 0){
 
-	if(rec_cnt != 0){
+			if(rec_byte != '\r'){
+				switch(rec_byte){
+					case(a):
+						if(!(Mast->move_state & LEFT))
+							mastcam_move(Mast,LEFT);
+					break;
 
-		if(rec_byte != '\r'){
-			switch(rec_byte){
-				case(a):
-					if(!(Mast.move_state & LEFT))
-						mastcam_move(&Mast,LEFT);
-				break;
+					case(d):
+						if(!(Mast->move_state & RIGHT))
+							mastcam_move(Mast,RIGHT);
+					break;
 
-				case(d):
-					if(!(Mast.move_state & RIGHT))
-						mastcam_move(&Mast,RIGHT);
-				break;
+					case(s):
+						if(!(Mast->move_state & DOWN))
+							mastcam_move(Mast,DOWN);
+					break;
 
-				case(s):
-					if(!(Mast.move_state & DOWN))
-						mastcam_move(&Mast,DOWN);
-				break;
-
-				case(w):
-					if(!(Mast.move_state & UP))
-						mastcam_move(&Mast,UP);
-				break;
+					case(w):
+						if(!(Mast->move_state & UP))
+							mastcam_move(Mast,UP);
+					break;
+				}
 			}
-		}
-		else{
-			mastcam_getpos(&Mast);
-		}
+			else{
+				mastcam_getpos(Mast, &(Curstate->state_data.azimuth_pos), &(Curstate->state_data.zenith_pos));
+				brk_flag = 1;
+			}
 
+		}
+		else if(Mast->move_state != STOP){
+			mastcam_move(Mast,STOP);
+		}
 	}
-	else if(Mast.move_state != STOP){
-		mastcam_move(&Mast,STOP);
-	}
-	*/
 	////////////////////////////////////////////////////////////////////////////
 
 	xil_printf("program position! \n\r");
 }
 
+void Program_duration(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState){
 
+	//char rec_byte;
+	//int rec_cnt;
+	//int val_rec_cnt;
+	//char rec_string[10];
+	//unsigned int duration = 0;
+
+	//val_rec_cnt = 0;
+	xil_printf("enter the duration to remain in this state (milliseconds): \r\n");
+
+	/*
+	while(1){
+		while(!((rec_byte >= 0x30 && rec_byte <= 0x39) || rec_byte == "\r")){
+			timer_pend(1);
+			XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
+		}
+
+		if(val_rec_cnt >= 1 && rec_byte == "\r"){
+			rec_string[val_rec_cnt] = 0x00;
+			duration = (unsigned int)atoi(rec_string);
+		}
+
+		if(duration == 0 && val_rec_cnt != 9){
+			xil_printf(" %c",rec_byte);
+			rec_string[val_rec_cnt] = rec_byte;
+			val_rec_cnt += 1;
+		}
+
+		if(val_rec_cnt == 9){
+			CurState->state_data.duration = duration;
+			break;
+		}
+
+	}
+	*/
+
+
+}
 
 RunState Run(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateNum){
 
@@ -364,13 +428,24 @@ RunState Run(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateN
 	switch(run_state_next){
 		case(RUNNING):
 			run_state = RUNNING;
+
+			//running loop
+			while(1){
+				mastcam_moveto(Mast, PAN, CurState->state_data.azimuth_pos);
+				mastcam_moveto(Mast, TILT, CurState->state_data.zenith_pos);
+				timer_pend(Main_Hw, 5000);
+				xil_printf("next position! \n\n\r");
+				CurState = CurState->next_state;
+			}
+
+
 			if(print_flag == 0){
 				xil_printf("Sequence Running! Press (r) to set a new sequence \n\r");
 				print_flag = 1;
 			}
 			//get user input
 			while(rec_cnt == 0){
-				timer_pend(1);
+				timer_pend(Main_Hw, 1);
 				rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
 			}
 
@@ -383,6 +458,7 @@ RunState Run(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateN
 					run_state_next = RUNNING;
 				break;
 			}
+
 		break;
 
 		case(REPROGRAM):
@@ -502,15 +578,17 @@ void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
 
 
 	if (XTmrCtr_IsExpired(InstancePtr, TmrCtrNumber)) {
-		TimerExpired = 1;
+		TimerExpired += 1;
 	}
 
 }
 
 //Pend for pend_count timer interrupts
-void timer_pend(int pend_count){
+void timer_pend(MainHw *main_hw, int pend_count){
+	//XTmrCtr_Start(&(main_hw->tmr_ctr), TIMER_CNTR_0);
 	while(TimerExpired < pend_count){
 		//pend
 	}
 	TimerExpired = 0;
+	//XTmrCtr_Stop(&(main_hw->tmr_ctr), TIMER_CNTR_0);
 }
