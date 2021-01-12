@@ -24,7 +24,7 @@
 #define INTC_DEVICE_ID			XPAR_SCUGIC_SINGLE_DEVICE_ID
 #define TIMER_CNTR_0			0
 
-#define RESET_VALUE	 0xffff0000
+#define RESET_VALUE	 0xffff3caf
 
 //Ascii values of keys
 #define a 		0x61 //left
@@ -63,9 +63,9 @@ typedef enum {RUNNING, REPROGRAM} RunState;
  * 		through the newly programmed states.
  **************************************************************/
 ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int *StateNum);
-void Program_position(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState);
-void Program_channel(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState);
-void Program_duration(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState);
+void Program_position(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState);
+void Program_channel(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState);
+void Program_duration(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState);
 
 /*****************************************************************
  * Run:
@@ -286,7 +286,7 @@ ProgramState Program(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, in
 				xil_printf("\n Program another state? (y) for yes, (n) to begin sequencing between states. \n\r");
 				//wait for user to input data
 				while(rec_cnt == 0){
-					timer_pend(Main_Hw, 50);
+					timer_pend(Main_Hw, 1);
 					rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
 				}
 
@@ -375,42 +375,23 @@ void Program_position(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *Curstate){
 	xil_printf("program position! \n\r");
 }
 
-void Program_duration(MainHw *MainHw, Mastcam *Mast, Mastcam_State *CurState){
+void Program_duration(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState){
 
-	//char rec_byte;
-	//int rec_cnt;
-	//int val_rec_cnt;
-	//char rec_string[10];
-	//unsigned int duration = 0;
+	char rec_byte;
+	int rec_cnt;
+	int val_rec_cnt;
+	char rec_string[10];
+	unsigned int duration = 0;
 
-	//val_rec_cnt = 0;
+	val_rec_cnt = 0;
 	xil_printf("enter the duration to remain in this state (milliseconds): \r\n");
 
-	/*
-	while(1){
-		while(!((rec_byte >= 0x30 && rec_byte <= 0x39) || rec_byte == "\r")){
-			timer_pend(1);
-			XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
-		}
 
-		if(val_rec_cnt >= 1 && rec_byte == "\r"){
-			rec_string[val_rec_cnt] = 0x00;
-			duration = (unsigned int)atoi(rec_string);
-		}
-
-		if(duration == 0 && val_rec_cnt != 9){
-			xil_printf(" %c",rec_byte);
-			rec_string[val_rec_cnt] = rec_byte;
-			val_rec_cnt += 1;
-		}
-
-		if(val_rec_cnt == 9){
-			CurState->state_data.duration = duration;
-			break;
-		}
-
+	while(rec_cnt == 0){
+		rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
+		//timer_pend();
 	}
-	*/
+
 
 
 }

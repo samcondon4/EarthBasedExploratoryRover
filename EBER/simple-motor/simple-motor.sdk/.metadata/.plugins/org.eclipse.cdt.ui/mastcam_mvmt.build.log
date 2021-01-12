@@ -1,8 +1,8 @@
-18:55:52 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+20:57:58 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
 
-18:55:52 Build Finished (took 342ms)
+20:57:58 Build Finished (took 283ms)
 
