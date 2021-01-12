@@ -188,7 +188,8 @@ int main()
 				Run_State = Run(&Main_Hw, &Mast, &Head, StateNum);
 				switch(Run_State){
 					case(RUNNING):
-						//do nothing, system is just running
+						//do nothing, system is just running through programmed sequences
+						/*
 						if(run_print == 0){
 							i = 1;
 							while(CurState != Tail){
@@ -202,6 +203,7 @@ int main()
 							xil_printf("\n\r State %i zenith pos: %04x", i, CurState->state_data.zenith_pos);
 							CurState = CurState->next_state;
 						}
+						*/
 					break;
 
 					case(REPROGRAM):
@@ -377,21 +379,37 @@ void Program_position(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *Curstate){
 
 void Program_duration(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState){
 
-	char rec_byte;
+	unsigned char rec_byte;
 	int rec_cnt;
-	int val_rec_cnt;
 	char rec_string[10];
-	unsigned int duration = 0;
+	int val_rec_cnt = 0;
+
+	char ret = 0;
 
 	val_rec_cnt = 0;
 	xil_printf("enter the duration to remain in this state (milliseconds): \r\n");
 
+	while(ret == 0){
+		while(rec_cnt == 0){
+			rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
+			timer_pend(Main_Hw, 1);
+		}
 
-	while(rec_cnt == 0){
-		rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
-		//timer_pend();
+		if(rec_byte >= 0x30 && rec_byte <= 0x39){
+			xil_printf(" %c",rec_byte);
+			rec_string[val_rec_cnt] = rec_byte;
+			val_rec_cnt += 1;
+			if(rec_cnt == 9){
+				ret = 1;
+			}
+		}
+		else if(rec_byte == '\r' && val_rec_cnt >= 1){
+			ret = 1;
+		}
 	}
 
+	rec_string[val_rec_cnt] = 0x00;
+	CurState->state_data.duration = (unsigned int)atoi(rec_string);
 
 
 }
