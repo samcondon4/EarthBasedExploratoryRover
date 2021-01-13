@@ -409,7 +409,7 @@ void Program_duration(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState){
 		else if(rec_byte == backspace){
 			val_rec_cnt -= 1;
 			rec_string[val_rec_cnt] = 0x00;
-			xil_printf("%c%c%c", backspace, space, backspace);
+			xil_printf("%c%c", backspace, space);
 		}
 		rec_byte = 0x00;
 		rec_cnt = 0x00;
@@ -429,39 +429,41 @@ RunState Run(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateN
 	static char print_flag;
 	unsigned char rec_byte;
 
-	int tmr_ex_prev;
-
 	int rec_cnt = 0;
 
 	switch(run_state_next){
 		case(RUNNING):
 
 			run_state = RUNNING;
-			tmr_ex_prev = TimerExpired;
 
-			//Set mastcam in initial state
-			mastcam_moveto(Mast, PAN, CurState->state_data.azimuth_pos);
-			mastcam_moveto(Mast, TILT, CurState->state_data.zenith_pos);
-			timer_pend(Main_Hw, 1500); //wait until motors have settled in new position before sending stop command.
-			mastcam_move(Mast, STOP);
+			//running loop
+			while(1){
+				mastcam_moveto(Mast, PAN, CurState->state_data.azimuth_pos);
+				mastcam_moveto(Mast, TILT, CurState->state_data.zenith_pos);
+				timer_pend(Main_Hw, 5000);
+				xil_printf("next position! \n\n\r");
+				CurState = CurState->next_state;
+			}
 
-			xil_printf("Sequence Running! Press (r) to set a new sequence \n\r");
 
-			while(run_state_next == RUNNING){
+			if(print_flag == 0){
+				xil_printf("Sequence Running! Press (r) to set a new sequence \n\r");
+				print_flag = 1;
+			}
+			//get user input
+			while(rec_cnt == 0){
 				timer_pend(Main_Hw, 1);
 				rec_cnt = XUartPs_Recv(&(Main_Hw->ps_uart), &rec_byte, 16);
-				if(rec_cnt != 0 && rec_byte == r){
+			}
+
+			switch(rec_byte){
+				case(r):
 					run_state_next = REPROGRAM;
-				}
-				else if(TimerExpired > tmr_ex_prev + CurState->state_data.duration){
-					//move to next state
-					CurState = CurState->next_state;
-					mastcam_moveto(Mast, PAN, CurState->state_data.azimuth_pos);
-					mastcam_moveto(Mast, TILT, CurState->state_data.zenith_pos);
-					tmr_ex_prev = TimerExpired;
-					timer_pend(Main_Hw, 1000); //wait until motors have settled in new position before sending stop command.
-					mastcam_move(Mast, STOP);
-				}
+				break;
+
+				default:
+					run_state_next = RUNNING;
+				break;
 			}
 
 		break;

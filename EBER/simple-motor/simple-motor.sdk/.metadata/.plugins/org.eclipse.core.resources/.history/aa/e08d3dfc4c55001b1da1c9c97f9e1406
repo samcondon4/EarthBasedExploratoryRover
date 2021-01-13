@@ -416,7 +416,7 @@ void Program_duration(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState){
 	}
 
 	rec_string[val_rec_cnt] = 0x00;
-	CurState->state_data.duration = (unsigned int)atoi(rec_string);
+	CurState->state_data.duration = 5*(unsigned int)atoi(rec_string);
 	xil_printf("\n\r");
 
 }
@@ -458,8 +458,7 @@ RunState Run(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateN
 					CurState = CurState->next_state;
 					mastcam_moveto(Mast, PAN, CurState->state_data.azimuth_pos);
 					mastcam_moveto(Mast, TILT, CurState->state_data.zenith_pos);
-					tmr_ex_prev = TimerExpired;
-					timer_pend(Main_Hw, 1000); //wait until motors have settled in new position before sending stop command.
+					timer_pend(Main_Hw, 1500); //wait until motors have settled in new position before sending stop command.
 					mastcam_move(Mast, STOP);
 				}
 			}

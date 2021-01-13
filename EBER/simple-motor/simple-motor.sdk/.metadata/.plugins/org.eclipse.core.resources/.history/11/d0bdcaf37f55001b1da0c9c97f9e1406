@@ -188,6 +188,10 @@ int mastcam_getpos(Mastcam *mastcam, short *azimuth_pos, short *zenith_pos){
 	//Check if header was received. If this misses things, implement a checksum check
 	if(recv_buf[0] == 0x55 && recv_buf[1] == 0x55){
 		*azimuth_pos = (recv_buf[5]) | (recv_buf[6] << 8);
+		//print position data
+		for(int i = 0; i < READ_POS_BUF_SIZE_RX; i++){
+			xil_printf("azimuth position data at index %i: %02x \n\r", i, recv_buf[i]);
+		}
 	}
 	else{
 		xil_printf("error reading azimuth position...");
@@ -204,6 +208,10 @@ int mastcam_getpos(Mastcam *mastcam, short *azimuth_pos, short *zenith_pos){
 	//Check if header was received. If this misses things, implement a checksum check
 	if(recv_buf[0] == 0x55 && recv_buf[1] == 0x55){
 		*zenith_pos = (recv_buf[5]) | (recv_buf[6] << 8);
+		//print position data
+		for(int i = 0; i < READ_POS_BUF_SIZE_RX; i++){
+			xil_printf("zenith position data at index %i: %02x \n\r", i, recv_buf[i]);
+		}
 	}
 	else{
 		xil_printf("error reading zenith position...");
