@@ -14009,3 +14009,49 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY com.xilinx.sdk.utils 0 0 2021-01-16 19:41:15.541
 !MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-242
+!SESSION 2021-01-17 09:24:22.315 -----------------------------------------------
+eclipse.buildId=2017.4
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk
+
+!ENTRY org.eclipse.ui 2 0 2021-01-17 09:24:33.648
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-01-17 09:24:33.648
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2021-01-17 09:24:34.566
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-01-17 09:24:34.566
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-17 09:24:46.261
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-17 09:24:46.273
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-17 09:24:46.293
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-17 09:24:46.304
+!MESSAGE XSCT Command: [setws C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk], Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-17 09:24:49.535
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-17 09:24:49.541
+!MESSAGE XSCT command with result: [setws C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk], Result: [null, ]. Thread: Thread-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-17 09:24:49.569
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-17 09:24:54.619
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-17 09:24:54.625
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_1/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-01-17 09:24:56.782
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper_hw_platform_1/system.hdf], Result: [null, ]. Thread: main

@@ -15020,3 +15020,10 @@ con
 
 19:10:04 INFO  : Launch script is exported to file 'C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_mastcam_mvmt.elf_on_local.tcl'
 19:41:15 INFO  : Disconnected from the channel tcfchan#1.
+09:24:41 INFO  : Registering command handlers for SDK TCF services
+09:24:42 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\thoma\EBER\GIT\EBER\simple-motor\simple-motor.sdk\temp_xsdb_launch_script.tcl
+09:24:46 INFO  : XSCT server has started successfully.
+09:24:46 INFO  : Successfully done setting XSCT server connection channel  
+09:24:49 INFO  : Successfully done setting SDK workspace  
+09:24:49 INFO  : Processing command line option -hwspec C:/Users/thoma/EBER/GIT/EBER/simple-motor/simple-motor.sdk/design_1_wrapper.hdf.
+09:24:49 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_1.
