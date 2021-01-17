@@ -346,3 +346,74 @@ arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
   42272	   3924	  22664	  68860	  10cfc	mastcam_mvmt.elf
 'Finished building: mastcam_mvmt.elf.size'
 ' '
+20:34:48 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:35:19 **** Auto Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/MastcamControl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamControl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamControl.d" -MT"src/MastcamControl.o" -o "src/MastcamControl.o" "../src/MastcamControl.c"
+../src/MastcamControl.c: In function 'main':
+../src/MastcamControl.c:124:10: warning: variable 'run_print' set but not used [-Wunused-but-set-variable]
+     char run_print;
+          ^~~~~~~~~
+../src/MastcamControl.c:114:6: warning: unused variable 'i' [-Wunused-variable]
+  int i; //iterator
+      ^
+../src/MastcamControl.c: In function 'Run':
+../src/MastcamControl.c:429:14: warning: variable 'print_flag' set but not used [-Wunused-but-set-variable]
+  static char print_flag;
+              ^~~~~~~~~~
+'Finished building: ../src/MastcamControl.c'
+' '
+'Building target: mastcam_mvmt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mastcam_mvmt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  42272	   3924	  22664	  68860	  10cfc	mastcam_mvmt.elf
+'Finished building: mastcam_mvmt.elf.size'
+' '
+20:36:53 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:40:27 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:04:55 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:06:00 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:06:45 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:09:45 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:10:01 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

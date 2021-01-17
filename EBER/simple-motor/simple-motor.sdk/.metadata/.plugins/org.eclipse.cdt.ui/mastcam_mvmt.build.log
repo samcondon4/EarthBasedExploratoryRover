@@ -1,23 +1,8 @@
-19:15:22 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
+19:10:01 **** Incremental Build of configuration Debug for project mastcam_mvmt ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-'Building file: ../src/MastcamSupport.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MastcamSupport.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mastcam_mvmt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/MastcamSupport.d" -MT"src/MastcamSupport.o" -o "src/MastcamSupport.o" "../src/MastcamSupport.c"
-'Finished building: ../src/MastcamSupport.c'
-' '
-'Building target: mastcam_mvmt.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mastcam_mvmt_bsp/ps7_cortexa9_0/lib -o "mastcam_mvmt.elf"  ./src/MastcamControl.o ./src/MastcamSupport.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mastcam_mvmt.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size mastcam_mvmt.elf  |tee "mastcam_mvmt.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  42272	   3924	  22664	  68860	  10cfc	mastcam_mvmt.elf
-'Finished building: mastcam_mvmt.elf.size'
-' '
+make: Nothing to be done for `main-build'.
 
-19:15:23 Build Finished (took 1s.95ms)
+19:10:02 Build Finished (took 283ms)
 

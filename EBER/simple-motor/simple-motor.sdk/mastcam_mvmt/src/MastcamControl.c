@@ -458,8 +458,8 @@ RunState Run(MainHw *Main_Hw, Mastcam *Mast, Mastcam_State *CurState, int StateN
 					CurState = CurState->next_state;
 					mastcam_moveto(Mast, PAN, CurState->state_data.azimuth_pos);
 					mastcam_moveto(Mast, TILT, CurState->state_data.zenith_pos);
-					tmr_ex_prev = TimerExpired;
 					timer_pend(Main_Hw, 1000); //wait until motors have settled in new position before sending stop command.
+					tmr_ex_prev = TimerExpired;
 					mastcam_move(Mast, STOP);
 				}
 			}
